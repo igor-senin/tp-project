@@ -3,10 +3,11 @@
 
 #include <SFML/Graphics.hpp>
 
-class Tile {
+class MainTile {
  private:
   sf::Sprite sprite;
-  const bool damaging;
+  const int damaging;
+  std::string path_to_texture;
 
  public:
   Tile(sf::Texture&, sf::IntRect, bool = false);
@@ -16,5 +17,10 @@ class Tile {
   void update();
   void render(sf::RenderTarget&);
 };
+class Air: public MainTile {
+
+};
+class DefaultTile: public MainTile {};
+class DamageTile: public MainTile {};
 
 #endif //TEST_GAME_INCLUDE_TILE_H_

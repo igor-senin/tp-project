@@ -1,0 +1,1 @@
+class tile -- character on map

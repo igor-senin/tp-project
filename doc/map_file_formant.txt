@@ -5,9 +5,10 @@
 N * M 
 
 # then follows the matrix N x M, each cell of which characterizes a block on
-# the map
+# the map, short names you can find in default_tile_settings.h
 
 # example
+
 aaaaaabb
 bbbbbaaa
 aaaaaaab
@@ -15,10 +16,3 @@ aaaaaaab
 aaaaaaab
 bbbbbbbb
 cccccccc
-
-# now contains information about what the abbreviation of each cell means
-
-# example
-a information
-b ...
-c ...
