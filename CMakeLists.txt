@@ -8,7 +8,8 @@ set(CMAKE_CXX_STANDARD 17)
 add_executable(test_game src/main.cpp src/game.cpp
         include/game.h include/player.h src/player.cpp
         include/tile.h src/tile.cpp include/tilemap.h
-        src/tilemap.cpp
+        src/tilemap.cpp src/convert_map_file_to_matrix.cpp
+        include/convert_map_file_to_matrix.h
 )
 
 target_link_libraries(test_game sfml-graphics sfml-window sfml-system)

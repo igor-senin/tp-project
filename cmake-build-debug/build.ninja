@@ -107,6 +107,13 @@ build CMakeFiles/test_game.dir/src/tilemap.cpp.o: CXX_COMPILER__test_game_Debug 
   OBJECT_DIR = CMakeFiles/test_game.dir
   OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
 
+build CMakeFiles/test_game.dir/src/convert_map_file_to_matrix.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/convert_map_file_to_matrix.cpp || cmake_object_order_depends_target_test_game
+  DEP_FILE = CMakeFiles/test_game.dir/src/convert_map_file_to_matrix.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  OBJECT_DIR = CMakeFiles/test_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target test_game
@@ -115,7 +122,7 @@ build CMakeFiles/test_game.dir/src/tilemap.cpp.o: CXX_COMPILER__test_game_Debug 
 #############################################
 # Link the executable test_game
 
-build test_game: CXX_EXECUTABLE_LINKER__test_game_Debug CMakeFiles/test_game.dir/src/main.cpp.o CMakeFiles/test_game.dir/src/game.cpp.o CMakeFiles/test_game.dir/src/player.cpp.o CMakeFiles/test_game.dir/src/tile.cpp.o CMakeFiles/test_game.dir/src/tilemap.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build test_game: CXX_EXECUTABLE_LINKER__test_game_Debug CMakeFiles/test_game.dir/src/main.cpp.o CMakeFiles/test_game.dir/src/game.cpp.o CMakeFiles/test_game.dir/src/player.cpp.o CMakeFiles/test_game.dir/src/tile.cpp.o CMakeFiles/test_game.dir/src/tilemap.cpp.o CMakeFiles/test_game.dir/src/convert_map_file_to_matrix.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/test_game.dir
