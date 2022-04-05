@@ -1,0 +1,24 @@
+# row size per colum size
+# between numbers there is a separator '*'
+
+# example:
+N * M 
+
+# then follows the matrix N x M, each cell of which characterizes a block on
+# the map
+
+# example
+aaaaaabb
+bbbbbaaa
+aaaaaaab
+aaaaaaab
+aaaaaaab
+bbbbbbbb
+cccccccc
+
+# now contains information about what the abbreviation of each cell means
+
+# example
+a information
+b ...
+c ...
