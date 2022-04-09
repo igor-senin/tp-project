@@ -1,24 +1,23 @@
-//
-// Created by igor on 24.03.2022.
-// Updated by paves on 04.05
-
 #include "tile.h"
 #include "default_tile_settings.h"
 
-Tile::Tile(sf::Texture& texture_sheet,
-           sf::IntRect texture_rect, bool dmg): damaging(dmg) {
-  sprite.setTexture(texture_sheet);
-  sprite.setTextureRect(texture_rect);
-}
+MainTile::MainTile(int damage, std::string& input_path_to_texture)
+  : damaging(damage)
+  , path_to_texture(input_path_to_texture)
+{}
 
-const sf::FloatRect Tile::getGlobalBounds() const {
-  return sprite.getGlobalBounds();
-}
+Air::Air(int damage = default_tile_settings::air_damage, 
+         std::string& input_path_to_texture = air_path_to_texture)
+{}
 
-void Tile::update() {
+DefaultTile::DefaultTile(int damage = default_tile_settings::default_tile_damage, 
+                         std::string& input_path_to_texture = 
+                             default_tile_settings::default_tile_path_to_texture)
+  : MainTile(damage, input_path_to_texture)
+{}
 
-}
-
-void Tile::render(sf::RenderTarget& target) {
-  target.draw(sprite);
-}
+DamageTile::DamageTile(int damage = default_tile_settings::damage_tile_damage, 
+                       std::string& input_path_to_texture = 
+                           default_tile_settings::damage_tile_path_to_texture)
+  : MainTile(damage, input_path_to_texture)
+{}

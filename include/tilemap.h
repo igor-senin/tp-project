@@ -1,12 +1,10 @@
-#ifndef TEST_GAME_INCLUDE_TILEMAP_H_
-#define TEST_GAME_INCLUDE_TILEMAP_H_
-
 #include <vector>
+#include "convert_map_file_to_matrix.h"
 #include "tile.h"
 
 class TileMap {
  private:
-  std::vector<std::vector<Tile*>> tiles;
+  std::vector<std::vector<MainTile*>> tile_map;
  public:
   TileMap();
  ~TileMap();
@@ -18,5 +16,3 @@ class TileMap {
  void update();
  void render();
 };
-
-#endif //TEST_GAME_INCLUDE_TILEMAP_H_

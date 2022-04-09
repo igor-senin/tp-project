@@ -1,26 +1,23 @@
-#ifndef TEST_GAME_INCLUDE_TILE_H_
-#define TEST_GAME_INCLUDE_TILE_H_
-
+#pragma once
 #include <SFML/Graphics.hpp>
 
 class MainTile {
  private:
-  sf::Sprite sprite;
   const int damaging;
   std::string path_to_texture;
-
+  //sfml some
  public:
-  Tile(sf::Texture&, sf::IntRect, bool = false);
-
-  const sf::FloatRect getGlobalBounds() const;
-
-  void update();
-  void render(sf::RenderTarget&);
+  MainTile(int, std::string&);
 };
+
 class Air: public MainTile {
-
+  Air(int, std::string&);
 };
-class DefaultTile: public MainTile {};
-class DamageTile: public MainTile {};
 
-#endif //TEST_GAME_INCLUDE_TILE_H_
+class DefaultTile: public MainTile {
+  DefaultTile(int, std::string&);
+};
+
+class DamageTile: public MainTile {
+  DamageTile(int, std::string&);
+};
