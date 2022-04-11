@@ -1,3 +1,6 @@
+#pragma once
+#include <string>
 namespace default_map_settings {
-  char separator_between_lines_and_columns = '*';
+  extern char separator;
+  extern std::string path_to_file;
 }

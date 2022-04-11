@@ -1,8 +1,8 @@
 6 * 7
 
 aaaaaaa
-abbbbba
-abbcbba
-abbcbba
-abbbbba
+auuuuua
+auuuuua
+auuuuua
+addddda
 aaaaaaa

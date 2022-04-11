@@ -1,4 +1,4 @@
-#include "../include/convert_map_file_to_matrix.h"
+#include "convert_map_file_to_matrix.h"
 
 std::vector<std::vector<MainTile*>>& ConvertToMapFromFile::GetTileMap() {
   return tile_map;
@@ -20,16 +20,16 @@ void ConvertToMapFromFile::ConvertingTiles() {
   for (int i = 0; i < map.size(); ++i) {
     std::vector<MainTile*> temp;
     for (int j = 0; j < map[i].size(); ++j) {
-      if (map[i][j] == default_map_settings::air_default_short_name) {
-        temp.push_back(&tile::air::MainTile);
+      if (map[i][j] == default_tile_settings::air_default_short_name) {
+        temp.push_back(reinterpret_cast<MainTile*>(&tile::air_tile));
         continue;
       }
-      if (map[i][j] == default_map_settings::damage_tile_default_short_name) {
-        temp.push_back(&tile::damage_tile::MainTile);
+      if (map[i][j] == default_tile_settings::damage_tile_default_short_name) {
+        temp.push_back(reinterpret_cast<MainTile*>(&tile::damage_tile));
         continue;
       }
-      if (map[i][j] == default_map_settings::default_tile_default_short_name) {
-        temp.push_back(&tile::default_tile::MainTile);
+      if (map[i][j] == default_tile_settings::default_tile_default_short_name) {
+        temp.push_back(reinterpret_cast<MainTile*>(&tile::default_tile));
         continue;
       }
       std::cerr << "Unknown tile\n";
@@ -37,9 +37,8 @@ void ConvertToMapFromFile::ConvertingTiles() {
     tile_map.push_back(temp);
   }
 }
-ConvertToMapFromFile::ConvertToMapFromFile(
-    std::string& source_file_name, 
-    char separator = default_map_settings::separator_between_lines_and_columns)
+ConvertToMapFromFile::ConvertToMapFromFile(std::string& source_file_name, 
+                                           char separator)
   : separator_bettween_number_lines_and_columns(separator)
 {
   Converting(source_file_name, separator);
@@ -68,10 +67,8 @@ void ConvertToMapFromFile::ConvertingMap(
   }
 }
 
-void ConvertToMapFromFile::Converting(
-    std::string& source_file_name, 
-    char separator //= default_map_settings::separator_between_lines_and_columns) {
-) { 
+void ConvertToMapFromFile::Converting(std::string& source_file_name, 
+                                      char separator) { 
   std::ifstream source_file;
   source_file.open(source_file_name);
 
@@ -91,16 +88,3 @@ void ConvertToMapFromFile::Converting(
   ConvertingTiles();
   source_file.close();
 }
-
-int main() {
-  std::string path_to_file = "../resources/map_example.txt";
-  ConvertToMapFromFile test_convert(path_to_file);
-  std::vector<std::vector<char>> mapa = test_convert.GetMap();
-  for (int i = 0; i < mapa.size(); ++i) {
-    for (int j = 0; j < mapa[i].size(); ++j) {
-      std::cout << mapa[i][j] << ' ';
-    }
-    std::cout << std::endl;
-  }
-}
-

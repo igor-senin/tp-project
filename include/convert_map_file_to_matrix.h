@@ -1,17 +1,15 @@
-#include <vector>
+#pragma once
 #include <string>
-#include <fstream>
+#include <vector>
 #include <iostream>
-#include "default_map_settings.h"
+#include <fstream>
 #include "initialization_of_tiles.h"
-#include "../include/tiles/tile.h"
 
 class ConvertToMapFromFile {
  public:
 
-  ConvertToMapFromFile(std::string&, char);
-  void Converting(std::string&,
-		  char separator = default_map_settings::separator_between_lines_and_columns);
+  ConvertToMapFromFile(std::string&, char separator);
+  void Converting(std::string&, char separator);
 
   int GetNumberLines() const;                       
   int GetNumberColumns() const;

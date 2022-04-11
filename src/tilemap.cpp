@@ -1,26 +1,17 @@
 #include "tilemap.h"
 
-TileMap::TileMap() {
-
+TileMap::TileMap()
+{
+  ConvertToMapFromFile convert(default_map_settings::path_to_file, 
+                               default_map_settings::separator);
+  tile_map_ = convert.GetTileMap();
 }
 
-TileMap::~TileMap() {
-
+void TileMap::ChangeTile(MainTile* another, int x_coordinate, 
+                         int y_coordinate) {
+  tile_map_[x_coordinate][y_coordinate] = another;
 }
 
-void TileMap::addTile(unsigned int, unsigned int) {
-
+const std::vector<std::vector<MainTile*>>& TileMap::GetTileMap() {
+  return tile_map_;
 }
-
-void TileMap::removeTile(unsigned int, unsigned int) {
-
-}
-
-void TileMap::update() {
-
-}
-
-void TileMap::render() {
-
-}
-

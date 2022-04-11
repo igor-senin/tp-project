@@ -1,7 +1,8 @@
+#pragma once
 #include "tile.h"
 
 namespace tile {
-  Air air_tile();
-  DefaultTile default_tile();
-  DamageTile damage_tile();
+  extern Air air_tile;
+  extern DefaultTile default_tile;
+  extern DamageTile damage_tile;
 }

@@ -1,17 +1,31 @@
 cmake_minimum_required(VERSION 3.21)
-project(test_game)
 
-find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
+project(test_tile)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
-add_executable(test_game src/main.cpp src/game.cpp
-        include/game.h include/player.h src/player.cpp
-        include/tile.h src/tile.cpp include/tilemap.h
-        src/tilemap.cpp src/convert_map_file_to_matrix.cpp
-        include/convert_map_file_to_matrix.h
+include_directories(${CMAKE_SOURCE_DIR}
+                    "include" 
+                    "src" 
+                    "include/tiles" 
+                    "src/tiles"
+                    "test_build_tile"
 )
 
-target_link_libraries(test_game sfml-graphics sfml-window sfml-system)
-
-include_directories("test-game" "include")
+add_executable(
+  tileout 
+    include/convert_map_file_to_matrix.h 
+    include/default_map_settings.h 
+    include/tilemap.h
+    include/tiles/default_tile_settings.h 
+    include/tiles/initialization_of_tiles.h 
+    include/tiles/tile.h
+    src/convert_map_file_to_matrix.cpp 
+    src/tilemap.cpp 
+    src/default_map_settings.cpp
+    src/tiles/default_tile_settings.cpp
+    src/tiles/initialization_of_tiles.cpp
+    src/tiles/tile.cpp
+    test_build_tile/main.cpp
+)
