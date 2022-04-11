@@ -75,37 +75,58 @@ build cmake_object_order_depends_target_test_game: phony || CMakeFiles/test_game
 build CMakeFiles/test_game.dir/src/main.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/main.cpp || cmake_object_order_depends_target_test_game
   DEP_FILE = CMakeFiles/test_game.dir/src/main.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
   OBJECT_DIR = CMakeFiles/test_game.dir
   OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
 
 build CMakeFiles/test_game.dir/src/game.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/game.cpp || cmake_object_order_depends_target_test_game
   DEP_FILE = CMakeFiles/test_game.dir/src/game.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
   OBJECT_DIR = CMakeFiles/test_game.dir
   OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
 
-build CMakeFiles/test_game.dir/src/player.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/player.cpp || cmake_object_order_depends_target_test_game
-  DEP_FILE = CMakeFiles/test_game.dir/src/player.cpp.o.d
+build CMakeFiles/test_game.dir/src/character/player.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/character/player.cpp || cmake_object_order_depends_target_test_game
+  DEP_FILE = CMakeFiles/test_game.dir/src/character/player.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
   OBJECT_DIR = CMakeFiles/test_game.dir
-  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src/character
 
 build CMakeFiles/test_game.dir/src/tile.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/tile.cpp || cmake_object_order_depends_target_test_game
   DEP_FILE = CMakeFiles/test_game.dir/src/tile.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
   OBJECT_DIR = CMakeFiles/test_game.dir
   OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
 
 build CMakeFiles/test_game.dir/src/tilemap.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/tilemap.cpp || cmake_object_order_depends_target_test_game
   DEP_FILE = CMakeFiles/test_game.dir/src/tilemap.cpp.o.d
   FLAGS = -g -std=gnu++17
-  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
   OBJECT_DIR = CMakeFiles/test_game.dir
   OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src
+
+build CMakeFiles/test_game.dir/src/character/control.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/character/control.cpp || cmake_object_order_depends_target_test_game
+  DEP_FILE = CMakeFiles/test_game.dir/src/character/control.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
+  OBJECT_DIR = CMakeFiles/test_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src/character
+
+build CMakeFiles/test_game.dir/src/character/model.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/character/model.cpp || cmake_object_order_depends_target_test_game
+  DEP_FILE = CMakeFiles/test_game.dir/src/character/model.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
+  OBJECT_DIR = CMakeFiles/test_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src/character
+
+build CMakeFiles/test_game.dir/src/character/view.cpp.o: CXX_COMPILER__test_game_Debug /home/igor/CLionProjects/tp-project/src/character/view.cpp || cmake_object_order_depends_target_test_game
+  DEP_FILE = CMakeFiles/test_game.dir/src/character/view.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  INCLUDES = -I/home/igor/CLionProjects/tp-project/test-game -I/home/igor/CLionProjects/tp-project/include -I/home/igor/CLionProjects/tp-project/include/character
+  OBJECT_DIR = CMakeFiles/test_game.dir
+  OBJECT_FILE_DIR = CMakeFiles/test_game.dir/src/character
 
 
 # =============================================================================
@@ -115,7 +136,7 @@ build CMakeFiles/test_game.dir/src/tilemap.cpp.o: CXX_COMPILER__test_game_Debug 
 #############################################
 # Link the executable test_game
 
-build test_game: CXX_EXECUTABLE_LINKER__test_game_Debug CMakeFiles/test_game.dir/src/main.cpp.o CMakeFiles/test_game.dir/src/game.cpp.o CMakeFiles/test_game.dir/src/player.cpp.o CMakeFiles/test_game.dir/src/tile.cpp.o CMakeFiles/test_game.dir/src/tilemap.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
+build test_game: CXX_EXECUTABLE_LINKER__test_game_Debug CMakeFiles/test_game.dir/src/main.cpp.o CMakeFiles/test_game.dir/src/game.cpp.o CMakeFiles/test_game.dir/src/character/player.cpp.o CMakeFiles/test_game.dir/src/tile.cpp.o CMakeFiles/test_game.dir/src/tilemap.cpp.o CMakeFiles/test_game.dir/src/character/control.cpp.o CMakeFiles/test_game.dir/src/character/model.cpp.o CMakeFiles/test_game.dir/src/character/view.cpp.o | /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1 /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   FLAGS = -g
   LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libsfml-graphics.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-window.so.2.5.1  /usr/lib/x86_64-linux-gnu/libsfml-system.so.2.5.1
   OBJECT_DIR = CMakeFiles/test_game.dir

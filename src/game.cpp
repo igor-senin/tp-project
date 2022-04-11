@@ -21,23 +21,6 @@ Game::~Game() {
 }
 
 void Game::update() {
-  while (window.pollEvent(event)) {
-    if (event.type == sf::Event::Closed) {
-      window.close();
-    } else if (event.type == sf::Event::KeyPressed
-    and event.key.code == sf::Keyboard::Escape) {
-      window.close();
-    }
-
-    if (event.type == sf::Event::KeyReleased
-        and (event.key.code == sf::Keyboard::A or
-            event.key.code == sf::Keyboard::D or
-            event.key.code == sf::Keyboard::W or
-            event.key.code == sf::Keyboard::S)) {
-      player->resetAnimationTimer();
-    }
-  }
-
   updatePlayer();
 
   updateCollision();
