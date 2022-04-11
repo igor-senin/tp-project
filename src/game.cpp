@@ -2,9 +2,9 @@
 #include <iostream>
 
 void Game::initWindow() {
-  window.create(sf::VideoMode(2000, 1000), "Game",
+  window.create(sf::VideoMode(1000, 500), "Game",
                 sf::Style::Fullscreen);
-  window.setFramerateLimit(144);
+  window.setFramerateLimit(80);
 }
 
 void Game::initPlayer() {
