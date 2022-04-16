@@ -2,7 +2,7 @@
 #include <iostream>
 
 void Game::initWindow() {
-  window.create(sf::VideoMode(1000, 500), "Game",
+  window.create(sf::VideoMode(2000, 1000), "Game",
                 sf::Style::Fullscreen);
   window.setFramerateLimit(80);
 }
@@ -21,13 +21,38 @@ Game::~Game() {
 }
 
 void Game::update() {
+  updateWindow();
+
   updatePlayer();
 
   updateCollision();
 }
 
+void Game::updateWindow() {
+  sf::Event ev;
+  while (window.pollEvent(ev)) {
+    if (ev.type == sf::Event::Closed
+    or (ev.type == sf::Event::KeyPressed
+    and ev.key.code == sf::Keyboard::Escape)) {
+      window.close();
+    }
+  }
+}
+
 void Game::updatePlayer() {
   player->update();
+}
+
+void Game::updateCollision() {
+  // Collision bottom of screen
+  if (player->getPosition().y + player->getGlobalBounds().height
+      > window.getSize().y) {
+    player->landedY();
+    player->setPosition(
+        player->getPosition().x,
+        window.getSize().y - player->getGlobalBounds().height
+    );
+  }
 }
 
 void Game::render() {
@@ -38,22 +63,10 @@ void Game::render() {
   window.display();
 }
 
-const sf::RenderWindow& Game::getWindow() const {
+sf::RenderWindow& Game::getWindow() {
   return window;
 }
 
 void Game::renderPlayer() {
   player->render(window);
-}
-
-void Game::updateCollision() {
-  // Collision bottom of screen
-  if (player->getPosition().y + player->getGlobalBounds().height
-  > window.getSize().y) {
-    player->landedY();
-    player->setPosition(
-        player->getPosition().x,
-        window.getSize().y - player->getGlobalBounds().height
-        );
-  }
 }

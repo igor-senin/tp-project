@@ -20,83 +20,78 @@ void View::initTexture() {
 
 void View::initSprite() {
   sprite.setTexture(textureSheet);
-  currentFrame = sf::IntRect(0,798,642,738);
+  currentFrame =sf::IntRect(
+      0,
+      line_starts[1],
+      frame_sizes.x,
+      frame_sizes.y
+      );
 
   sprite.setTextureRect(currentFrame);
-  sprite.setScale(0.2f, 0.2f);
+  sprite.setScale(frame_scale);
 }
 
 void View::stay() {
   if (animationTimer.getElapsedTime().asSeconds() >= 0.2f) {
-    currentFrame.top = 798;
-    currentFrame.left += 642;
-    if (currentFrame.left >= 1926) {
+    currentFrame.top = line_starts[1];
+    currentFrame.left += frame_sizes.x;
+    if (currentFrame.left >= number_of_frames_in_line[1] * frame_sizes.x) {
       currentFrame.left = 0;
     }
     animationTimer.restart();
     sprite.setTextureRect(currentFrame);
   }
-}
-
-void View::moveLeft() {
-  if (animationTimer.getElapsedTime().asSeconds() >= 0.07f) {
-    currentFrame.left += 642;
-    if (currentFrame.left >= 3852) {
-      currentFrame.left = 0;
-      currentFrame.top = (currentFrame.top == 1630 ? 2403 : 1630);
-    }
-    animationTimer.restart();
-    sprite.setTextureRect(currentFrame);
-  }
-  sprite.setScale(-0.2f, 0.2f);
-  sprite.setOrigin(sprite.getGlobalBounds().width / 0.2f, 0.f);
 }
 
 void View::moveRight() {
   if (animationTimer.getElapsedTime().asSeconds() >= 0.07f) {
-    currentFrame.left += 642;
-    if (currentFrame.left >= 3852) {
+    currentFrame.left += frame_sizes.x;
+    if (currentFrame.left >= number_of_frames_in_line[2] * frame_sizes.x) {
       currentFrame.left = 0;
-      currentFrame.top = (currentFrame.top == 1630 ? 2403 : 1630);
+      currentFrame.top =
+          line_starts[(currentFrame.top == line_starts[2] ? 3 : 2)];
     }
     animationTimer.restart();
     sprite.setTextureRect(currentFrame);
   }
-  sprite.setScale(0.2f, 0.2f);
+  sprite.setScale(frame_scale);
   sprite.setOrigin(0.f, 0.f);
 }
 
 void View::jump() {
-  if (animationTimer.getElapsedTime().asSeconds() >= 0.2f) {
-    currentFrame.top = 0.f;
-    currentFrame.left += 642;
-    if (currentFrame.left >= 3210) {
+  if (animationTimer.getElapsedTime().asSeconds() >= 0.17f) {
+    currentFrame.top = 0;
+    currentFrame.left += frame_sizes.x;
+    if (currentFrame.left >= number_of_frames_in_line[0] * frame_sizes.x) {
       currentFrame.left = 0;
     }
+    animationTimer.restart();
   }
-  sprite.setScale(0.2f, 0.2f);
+  sprite.setScale(frame_scale);
   sprite.setTextureRect(currentFrame);
 }
 
 void View::fall() {
   currentFrame.top = 0;
   currentFrame.left = 2568;
-  sprite.setScale(0.2f, 0.2f);
+  sprite.setScale(frame_scale);
   sprite.setTextureRect(currentFrame);
+}
+
+void View::turn() {
+  sprite.setScale(-frame_scale.x, frame_scale.y);
+  sprite.setOrigin(sprite.getGlobalBounds().width / frame_scale.x, 0.f);
 }
 
 void View::updateAnimations() {
   sprite.move(model->getVelocity());
 
-  switch(model->getState()) {
+  switch(model->state) {
     case IDLE:
       stay();
       break;
-    case MOVING_RIGHT:
+    case MOVING:
       moveRight();
-      break;
-    case MOVING_LEFT:
-      moveLeft();
       break;
     case JUMPING:
       jump();
@@ -107,6 +102,9 @@ void View::updateAnimations() {
     default:
       break;
   }
+
+  if (!model->looksRight)
+    turn();
 }
 
 void View::render(sf::RenderTarget& target) {

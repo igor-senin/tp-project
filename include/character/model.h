@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 
-enum PLAYER_CONDITION_STATES {IDLE = 0, MOVING_LEFT, MOVING_RIGHT,
+enum PLAYER_CONDITION_STATES {IDLE = 0, MOVING,
   JUMPING, FALLING};
 
 class Model {
@@ -14,20 +14,22 @@ class Model {
   bool wasGrounded = false;
   bool wasTouchingRightWall = false;
   bool wasTouchingLeftWall = false;
+  bool lookedRight = false;
 
   const float minVelocity = 0.5f;
   const float maxVelocityX = 7.5f;
   const float maxVelocityY = 15.f;
-  const float gravity = 0.65f;
-  const float drag = 0.93f;
+  const float gravity = 0.6f;
+  const float drag = 0.96f;
   const float acceleration = 2.f;
-
-  int state = 0;
 
  public:
   bool isGrounded = false;
   bool touchesRightWall = false;
   bool touchesLeftWall = false; // TODO : not public
+  bool looksRight = true;
+
+  int state = 0;
 
   Model() = default;
 
@@ -35,10 +37,8 @@ class Model {
   void updatePhysics();
   void changeVelocity(float, float);
   void landedY();
-  void setState(int);
   sf::Vector2f getVelocity();
 
-  int getState() const;
 };
 
 #endif //TEST_GAME_INCLUDE_CHARACTER_MODEL_H_

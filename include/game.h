@@ -8,7 +8,6 @@
 class Game {
  private:
   sf::RenderWindow window;
-  sf::Event event;
 
   Player* player;
 
@@ -20,6 +19,7 @@ class Game {
   ~Game();
 
   // Functions
+  void updateWindow();
   void updatePlayer();
   void updateCollision();
   void update();
@@ -27,7 +27,7 @@ class Game {
   void renderPlayer();
   void render();
 
-  const sf::RenderWindow& getWindow() const;
+  sf::RenderWindow& getWindow();
 };
 
 #endif //TEST_GAME_INCLUDE_GAME_H_

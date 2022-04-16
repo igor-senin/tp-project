@@ -4,6 +4,11 @@
 #include <SFML/Graphics.hpp>
 #include <model.h>
 
+const int line_starts[] = {0, 798, 1630, 2403};
+const int number_of_frames_in_line[] = {5, 4, 6, 6};
+const sf::Vector2i frame_sizes = {642, 738};
+const sf::Vector2f frame_scale = {0.2f, 0.2f};
+
 class View {
  private:
   sf::Sprite sprite;
@@ -21,9 +26,9 @@ class View {
 
   void stay();
   void moveRight();
-  void moveLeft();
   void jump();
   void fall();
+  void turn();
  public:
   View() = default;
   View(Model*);

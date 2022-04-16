@@ -6,6 +6,7 @@ void Model::updatePreviousCondition() {
   wasGrounded = isGrounded;
   wasTouchingLeftWall = touchesLeftWall;
   wasTouchingRightWall = touchesRightWall;
+  lookedRight = looksRight;
 }
 
 void Model::updatePhysics() {
@@ -39,14 +40,7 @@ void Model::landedY() {
   isGrounded = true;
 }
 
-void Model::setState(int st) {
-  state = st;
-}
 
 sf::Vector2f Model::getVelocity() {
   return velocity;
-}
-
-int Model::getState() const {
-  return state;
 }
