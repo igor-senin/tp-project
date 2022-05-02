@@ -1,8 +1,8 @@
-6 * 7
+6 * 15
 
-aaaaaaa
-auuuuua
-auuuuua
-auuuuua
-addddda
-aaaaaaa
+aaaaaaaaaaaaaaa
+auuuuusssssaaaa
+auuuuusssssaaaa
+auuuuusssssaaaa
+adddddaaaaaaaaa
+aaaaaaaaaaaaaaa

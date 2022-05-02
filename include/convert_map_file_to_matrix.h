@@ -25,7 +25,7 @@ class ConvertToMapFromFile {
 
  private:                                                                  
 
-  char separator_bettween_number_lines_and_columns;                        
-  std::vector<std::vector<char>> map;                                      
-  std::vector<std::vector<MainTile*>> tile_map;
+  char separator_bettween_number_lines_and_columns_;                        
+  std::vector<std::vector<char>> map_;                                      
+  std::vector<std::vector<MainTile*>> tile_map_;
 };

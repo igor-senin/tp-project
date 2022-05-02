@@ -34,3 +34,8 @@ class DamageTile: public MainTile {
  public:
   DamageTile();
 };
+
+class StoneTile: public MainTile {
+ public:
+  StoneTile();
+};

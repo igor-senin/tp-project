@@ -21,10 +21,16 @@ void TileMap::InitSprites() {
           default_map_settings::scale_size, default_map_settings::scale_size));
       sprites_[i][j].setPosition(
           sf::Vector2f(default_map_settings::start_map_coordinate_x + 
-                       float(i) * default_map_settings::tile_size, 
+                       float(j) * default_map_settings::tile_size, 
                        default_map_settings::start_map_coordinate_y + 
-                       float(j) * default_map_settings::tile_size));
+                       float(i) * default_map_settings::tile_size));
     }
+  }
+  for (int i = 0; i < tile_map_.size(); ++i) {
+    for (int j = 0; j < tile_map_[i].size(); ++j) {
+      std::cout << tile_map_[i][j]->GetDamage();
+    }
+    std::cout << '\n';
   }
 }
 
