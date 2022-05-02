@@ -26,12 +26,6 @@ void TileMap::InitSprites() {
                        float(i) * default_map_settings::tile_size));
     }
   }
-  for (int i = 0; i < tile_map_.size(); ++i) {
-    for (int j = 0; j < tile_map_[i].size(); ++j) {
-      std::cout << tile_map_[i][j]->GetDamage();
-    }
-    std::cout << '\n';
-  }
 }
 
 void TileMap::Draw(sf::RenderWindow& window) {

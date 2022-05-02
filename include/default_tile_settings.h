@@ -8,6 +8,11 @@ namespace default_tile_settings {
   extern int damage_tile_damage;
   extern int stone_tile_damage;
 
+  extern bool air_is_wall;
+  extern bool damage_tile_is_wall;
+  extern bool default_tile_is_wall;
+  extern bool stone_tile_is_wall;
+
   extern std::string air_path_to_texture;
   extern std::string default_tile_path_to_texture;
   extern std::string damage_tile_path_to_texture;

@@ -11,12 +11,14 @@ class MainTile {
  private:
   const int damage_;
   std::string path_to_texture_;
-  sf::Texture texture;
+  sf::Texture texture_;
+  bool is_wall_;
   
  public:
-  MainTile(int, std::string&);
+  MainTile(int, std::string&, bool);
   void InitTexture(int, int, int, int);  // coordinates from image (make intrect)
   int GetDamage();
+  bool IsWall();
   sf::Texture& GetTexture();
 };
 
