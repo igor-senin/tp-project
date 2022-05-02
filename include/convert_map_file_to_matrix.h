@@ -3,6 +3,7 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include "tile.h"
 #include "initialization_of_tiles.h"
 
 class ConvertToMapFromFile {

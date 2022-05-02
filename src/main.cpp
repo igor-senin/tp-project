@@ -1,17 +1,18 @@
-#include <iostream>
-
 #include <SFML/Graphics.hpp>
+#include <iostream>
 #include <SFML/Window.hpp>
-
-#include <game.h>
+#include "tilemap.h"
 
 int main() {
 
-  Game game;
-
-  while (game.getWindow().isOpen()) {
-    game.update();
-    game.render();
+  sf::RenderWindow window(sf::VideoMode(2000, 1000), "My window");
+  window.setFramerateLimit(60);
+  TileMap tilemap;
+  
+  while (window.isOpen()) {
+    window.clear();
+    tilemap.Draw(window);
+    window.display();
   }
 
   return 0;

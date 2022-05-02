@@ -188,6 +188,9 @@ tileout_EXTERNAL_OBJECTS =
 ../bin/tileout: CMakeFiles/tileout.dir/src/tiles/tile.cpp.o
 ../bin/tileout: CMakeFiles/tileout.dir/main.cpp.o
 ../bin/tileout: CMakeFiles/tileout.dir/build.make
+../bin/tileout: /usr/lib64/libsfml-graphics.so.2.5.1
+../bin/tileout: /usr/lib64/libsfml-window.so.2.5.1
+../bin/tileout: /usr/lib64/libsfml-system.so.2.5.1
 ../bin/tileout: CMakeFiles/tileout.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mr_Isachenko/projects/tp_project/tp-project/test_build_tile/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../bin/tileout"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tileout.dir/link.txt --verbose=$(VERBOSE)

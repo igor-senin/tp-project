@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/mr_Isachenko/projects/tp_project/tp-project -I/home/mr_Isachenko/projects/tp_project/tp-project/include -I/home/mr_Isachenko/projects/tp_project/tp-project/src -I/home/mr_Isachenko/projects/tp_project/tp-project/include/tiles -I/home/mr_Isachenko/projects/tp_project/tp-project/src/tiles -I/home/mr_Isachenko/projects/tp_project/tp-project/test_build_tile
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++17
 
