@@ -1,3 +1,0 @@
-/home/igor/CLionProjects/tp-project/cmake-build-debug/CMakeFiles/test_game.dir
-/home/igor/CLionProjects/tp-project/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/igor/CLionProjects/tp-project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
