@@ -1,7 +1,7 @@
-CMakeFiles/tileout.dir/src/default_map_settings.cpp.o: \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/default_map_settings.cpp \
+CMakeFiles/proj.dir/src/default_map_settings.cpp.o: \
+ /home/mr_Isachenko/merge/tp-project/src/default_map_settings.cpp \
  /usr/include/stdc-predef.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/default_map_settings.h \
+ /home/mr_Isachenko/merge/tp-project/include/default_map_settings.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/string \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/os_defines.h \

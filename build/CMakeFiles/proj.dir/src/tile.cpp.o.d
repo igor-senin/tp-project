@@ -1,8 +1,7 @@
-CMakeFiles/tileout.dir/src/initialization_of_tiles.cpp.o: \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/initialization_of_tiles.cpp \
+CMakeFiles/proj.dir/src/tile.cpp.o: \
+ /home/mr_Isachenko/merge/tp-project/src/tile.cpp \
  /usr/include/stdc-predef.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/initialization_of_tiles.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/tile.h \
+ /home/mr_Isachenko/merge/tp-project/include/tile.h \
  /usr/local/include/SFML/Graphics/Texture.hpp \
  /usr/local/include/SFML/Graphics/Export.hpp \
  /usr/local/include/SFML/Config.hpp \
@@ -193,7 +192,7 @@ CMakeFiles/tileout.dir/src/initialization_of_tiles.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++io.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/fstream.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/default_tile_settings.h \
+ /home/mr_Isachenko/merge/tp-project/include/default_tile_settings.h \
  /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
  /usr/local/include/SFML/System.hpp \
  /usr/local/include/SFML/System/Clock.hpp \

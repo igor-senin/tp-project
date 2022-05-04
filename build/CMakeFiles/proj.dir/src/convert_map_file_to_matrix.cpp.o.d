@@ -1,7 +1,7 @@
-CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/default_tile_settings.cpp \
+CMakeFiles/proj.dir/src/convert_map_file_to_matrix.cpp.o: \
+ /home/mr_Isachenko/merge/tp-project/src/convert_map_file_to_matrix.cpp \
  /usr/include/stdc-predef.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/default_tile_settings.h \
+ /home/mr_Isachenko/merge/tp-project/include/convert_map_file_to_matrix.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/string \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -116,12 +116,12 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/include/bits/types/error_t.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/charconv.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_string.tcc \
- /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
- /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
- /usr/local/include/SFML/System/Clock.hpp \
- /usr/local/include/SFML/System/Export.hpp \
- /usr/local/include/SFML/System/Time.hpp \
- /usr/local/include/SFML/System/Err.hpp \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/vector \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_uninitialized.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_vector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_bvector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/vector.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ostream \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ios \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/exception \
@@ -147,15 +147,22 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_ios.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ostream.tcc \
- /usr/local/include/SFML/System/FileInputStream.hpp \
- /usr/local/include/SFML/System/InputStream.hpp \
- /usr/local/include/SFML/System/NonCopyable.hpp \
- /usr/local/include/SFML/System/Lock.hpp \
- /usr/local/include/SFML/System/MemoryInputStream.hpp \
- /usr/local/include/SFML/System/Mutex.hpp \
- /usr/local/include/SFML/System/Sleep.hpp \
- /usr/local/include/SFML/System/String.hpp \
- /usr/local/include/SFML/System/Utf.hpp \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/fstream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/codecvt.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/fstream.tcc \
+ /home/mr_Isachenko/merge/tp-project/include/tile.h \
+ /usr/local/include/SFML/Graphics/Texture.hpp \
+ /usr/local/include/SFML/Graphics/Export.hpp \
+ /usr/local/include/SFML/Config.hpp \
+ /usr/local/include/SFML/Graphics/Image.hpp \
+ /usr/local/include/SFML/Graphics/Color.hpp \
+ /usr/local/include/SFML/Graphics/Rect.hpp \
+ /usr/local/include/SFML/System/Vector2.hpp \
+ /usr/local/include/SFML/System/Vector2.inl \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/algorithm \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/utility \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_relops.h \
@@ -180,19 +187,32 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/node_handle.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/unordered_map.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/erase_if.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/vector \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_uninitialized.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_vector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_bvector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/vector.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/pstl/execution_defs.h \
+ /usr/local/include/SFML/Graphics/Rect.inl \
+ /usr/local/include/SFML/Window/GlResource.hpp \
+ /usr/local/include/SFML/Window/Export.hpp \
+ /usr/local/include/SFML/System/NonCopyable.hpp \
+ /usr/local/include/SFML/System/Export.hpp \
+ /home/mr_Isachenko/merge/tp-project/include/default_tile_settings.h \
+ /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
+ /usr/local/include/SFML/System.hpp \
+ /usr/local/include/SFML/System/Clock.hpp \
+ /usr/local/include/SFML/System/Time.hpp \
+ /usr/local/include/SFML/System/Err.hpp \
+ /usr/local/include/SFML/System/FileInputStream.hpp \
+ /usr/local/include/SFML/System/InputStream.hpp \
+ /usr/local/include/SFML/System/Lock.hpp \
+ /usr/local/include/SFML/System/MemoryInputStream.hpp \
+ /usr/local/include/SFML/System/Mutex.hpp \
+ /usr/local/include/SFML/System/Sleep.hpp \
+ /usr/local/include/SFML/System/String.hpp \
+ /usr/local/include/SFML/System/Utf.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/locale \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets_nonio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ctime \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/time_members.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/messages_members.h \
  /usr/include/libintl.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/codecvt.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets_nonio.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_conv.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/unique_ptr.h \
@@ -205,14 +225,10 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/local/include/SFML/System/ThreadLocal.hpp \
  /usr/local/include/SFML/System/ThreadLocalPtr.hpp \
  /usr/local/include/SFML/System/ThreadLocalPtr.inl \
- /usr/local/include/SFML/System/Vector2.hpp \
- /usr/local/include/SFML/System/Vector2.inl \
  /usr/local/include/SFML/System/Vector3.hpp \
  /usr/local/include/SFML/System/Vector3.inl \
  /usr/local/include/SFML/Window/Clipboard.hpp \
- /usr/local/include/SFML/Window/Export.hpp \
  /usr/local/include/SFML/Window/Context.hpp \
- /usr/local/include/SFML/Window/GlResource.hpp \
  /usr/local/include/SFML/Window/ContextSettings.hpp \
  /usr/local/include/SFML/Window/Cursor.hpp \
  /usr/local/include/SFML/Window/Event.hpp \
@@ -226,24 +242,18 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/local/include/SFML/Window/WindowHandle.hpp \
  /usr/local/include/SFML/Window/WindowStyle.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
- /usr/local/include/SFML/Graphics/Export.hpp \
  /usr/local/include/SFML/Graphics/CircleShape.hpp \
  /usr/local/include/SFML/Graphics/Shape.hpp \
  /usr/local/include/SFML/Graphics/Drawable.hpp \
  /usr/local/include/SFML/Graphics/RenderStates.hpp \
  /usr/local/include/SFML/Graphics/Transform.hpp \
- /usr/local/include/SFML/Graphics/Rect.hpp \
- /usr/local/include/SFML/Graphics/Rect.inl \
  /usr/local/include/SFML/Graphics/Transformable.hpp \
  /usr/local/include/SFML/Graphics/VertexArray.hpp \
  /usr/local/include/SFML/Graphics/Vertex.hpp \
- /usr/local/include/SFML/Graphics/Color.hpp \
  /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
  /usr/local/include/SFML/Graphics/ConvexShape.hpp \
  /usr/local/include/SFML/Graphics/Font.hpp \
  /usr/local/include/SFML/Graphics/Glyph.hpp \
- /usr/local/include/SFML/Graphics/Texture.hpp \
- /usr/local/include/SFML/Graphics/Image.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/map \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_tree.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_map.h \
@@ -258,4 +268,5 @@ CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o: \
  /usr/local/include/SFML/Graphics/Glsl.inl \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
- /usr/local/include/SFML/Graphics/VertexBuffer.hpp
+ /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
+ /home/mr_Isachenko/merge/tp-project/include/initialization_of_tiles.h

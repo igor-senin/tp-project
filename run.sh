@@ -2,6 +2,6 @@
 
 ./install.sh
 cd bin
-./tileout
+./proj
 cd ..
 

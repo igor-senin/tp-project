@@ -1,3 +1,3 @@
-/home/mr_Isachenko/projects/tp_project/tp-project/build/CMakeFiles/tileout.dir
-/home/mr_Isachenko/projects/tp_project/tp-project/build/CMakeFiles/edit_cache.dir
-/home/mr_Isachenko/projects/tp_project/tp-project/build/CMakeFiles/rebuild_cache.dir
+/home/mr_Isachenko/merge/tp-project/build/CMakeFiles/proj.dir
+/home/mr_Isachenko/merge/tp-project/build/CMakeFiles/edit_cache.dir
+/home/mr_Isachenko/merge/tp-project/build/CMakeFiles/rebuild_cache.dir

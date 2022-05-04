@@ -14,18 +14,27 @@ include_directories(${CMAKE_SOURCE_DIR}
                     "include" 
                     "src" 
                     "resources"
-                    "test_build_tile"
 )
 
 add_executable(
-  tileout 
-    src/main.cpp
+    proj
+      include/game.h 
+      include/character/player.h 
+      include/character/control.h
+      include/character/model.h 
+      include/character/view.h 
       include/convert_map_file_to_matrix.h 
       include/default_map_settings.h 
       include/tilemap.h
       include/default_tile_settings.h 
       include/initialization_of_tiles.h 
       include/tile.h
+      src/character/view.cpp
+      src/character/player.cpp
+      src/main.cpp 
+      src/game.cpp
+      src/character/model.cpp
+      src/character/control.cpp 
       src/convert_map_file_to_matrix.cpp 
       src/tilemap.cpp 
       src/default_map_settings.cpp
@@ -34,4 +43,5 @@ add_executable(
       src/tile.cpp
 )
 
-target_link_libraries(tileout sfml-graphics sfml-window sfml-system)
+target_link_libraries(proj sfml-graphics sfml-window sfml-system)
+include_directories("include" "include/character")

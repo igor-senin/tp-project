@@ -1,9 +1,16 @@
-CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/tilemap.cpp \
+CMakeFiles/proj.dir/src/character/player.cpp.o: \
+ /home/mr_Isachenko/merge/tp-project/src/character/player.cpp \
  /usr/include/stdc-predef.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/tilemap.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/convert_map_file_to_matrix.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/string \
+ /home/mr_Isachenko/merge/tp-project/include/character/player.h \
+ /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
+ /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
+ /usr/local/include/SFML/System/Clock.hpp \
+ /usr/local/include/SFML/System/Export.hpp \
+ /usr/local/include/SFML/System/Time.hpp \
+ /usr/local/include/SFML/System/Err.hpp \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ostream \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ios \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iosfwd \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -14,24 +21,6 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/pstl/pstl_config.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stringfwd.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/memoryfwd.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/char_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_algobase.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/functexcept.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception_defines.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cpp_type_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/type_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/numeric_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_pair.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/move.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/type_traits \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator_base_types.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator_base_funcs.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/concept_check.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/debug/assertions.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ptr_traits.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/debug/debug.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/predefined_ops.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/postypes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/cwchar \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
@@ -43,31 +32,45 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
  /usr/include/bits/types/__locale_t.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/exception \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception_ptr.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception_defines.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cxxabi_init_exception.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/typeinfo \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/hash_bytes.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/new \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/nested_exception.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/move.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/type_traits \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/char_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_algobase.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/functexcept.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cpp_type_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/type_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/numeric_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_pair.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator_base_types.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator_base_funcs.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/concept_check.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/debug/assertions.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_iterator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ptr_traits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/debug/debug.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/predefined_ops.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/types.h \
  /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/new_allocator.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/new \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/localefwd.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/clocale \
  /usr/include/locale.h /usr/include/bits/locale.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iosfwd \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/cctype \
  /usr/include/ctype.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ostream_insert.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cxxabi_forced.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_function.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/backward/binders.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/range_access.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/initializer_list \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_string.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ios_base.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/atomicity.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/gthr.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/gthr-default.h \
@@ -88,12 +91,23 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/include/bits/pthread_stack_min-dynamic.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/atomic_word.h \
  /usr/include/sys/single_threaded.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_classes.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/string \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/new_allocator.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ostream_insert.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cxxabi_forced.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_function.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/backward/binders.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/range_access.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/initializer_list \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_string.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/alloc_traits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/alloc_traits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_construct.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/string_view \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/functional_hash.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/hash_bytes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/string_view.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ext/string_conversions.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/cstdlib \
@@ -117,21 +131,6 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/include/bits/types/error_t.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/charconv.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_string.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/vector \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_uninitialized.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_vector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_bvector.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/vector.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ios \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/exception \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/exception_ptr.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/cxxabi_init_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/typeinfo \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/nested_exception.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ios_base.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_classes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_classes.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/system_error \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/error_constants.h \
@@ -148,22 +147,15 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_ios.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ostream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/fstream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/codecvt.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/fstream.tcc \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/tile.h \
- /usr/local/include/SFML/Graphics/Texture.hpp \
- /usr/local/include/SFML/Graphics/Export.hpp \
- /usr/local/include/SFML/Config.hpp \
- /usr/local/include/SFML/Graphics/Image.hpp \
- /usr/local/include/SFML/Graphics/Color.hpp \
- /usr/local/include/SFML/Graphics/Rect.hpp \
- /usr/local/include/SFML/System/Vector2.hpp \
- /usr/local/include/SFML/System/Vector2.inl \
+ /usr/local/include/SFML/System/FileInputStream.hpp \
+ /usr/local/include/SFML/System/InputStream.hpp \
+ /usr/local/include/SFML/System/NonCopyable.hpp \
+ /usr/local/include/SFML/System/Lock.hpp \
+ /usr/local/include/SFML/System/MemoryInputStream.hpp \
+ /usr/local/include/SFML/System/Mutex.hpp \
+ /usr/local/include/SFML/System/Sleep.hpp \
+ /usr/local/include/SFML/System/String.hpp \
+ /usr/local/include/SFML/System/Utf.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/algorithm \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/utility \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_relops.h \
@@ -188,32 +180,19 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/node_handle.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/unordered_map.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/erase_if.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/vector \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_uninitialized.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_vector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_bvector.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/vector.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/pstl/execution_defs.h \
- /usr/local/include/SFML/Graphics/Rect.inl \
- /usr/local/include/SFML/Window/GlResource.hpp \
- /usr/local/include/SFML/Window/Export.hpp \
- /usr/local/include/SFML/System/NonCopyable.hpp \
- /usr/local/include/SFML/System/Export.hpp \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/default_tile_settings.h \
- /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
- /usr/local/include/SFML/System.hpp \
- /usr/local/include/SFML/System/Clock.hpp \
- /usr/local/include/SFML/System/Time.hpp \
- /usr/local/include/SFML/System/Err.hpp \
- /usr/local/include/SFML/System/FileInputStream.hpp \
- /usr/local/include/SFML/System/InputStream.hpp \
- /usr/local/include/SFML/System/Lock.hpp \
- /usr/local/include/SFML/System/MemoryInputStream.hpp \
- /usr/local/include/SFML/System/Mutex.hpp \
- /usr/local/include/SFML/System/Sleep.hpp \
- /usr/local/include/SFML/System/String.hpp \
- /usr/local/include/SFML/System/Utf.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/locale \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets_nonio.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ctime \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/time_members.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/messages_members.h \
  /usr/include/libintl.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/codecvt.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets_nonio.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_conv.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/unique_ptr.h \
@@ -226,10 +205,14 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/local/include/SFML/System/ThreadLocal.hpp \
  /usr/local/include/SFML/System/ThreadLocalPtr.hpp \
  /usr/local/include/SFML/System/ThreadLocalPtr.inl \
+ /usr/local/include/SFML/System/Vector2.hpp \
+ /usr/local/include/SFML/System/Vector2.inl \
  /usr/local/include/SFML/System/Vector3.hpp \
  /usr/local/include/SFML/System/Vector3.inl \
  /usr/local/include/SFML/Window/Clipboard.hpp \
+ /usr/local/include/SFML/Window/Export.hpp \
  /usr/local/include/SFML/Window/Context.hpp \
+ /usr/local/include/SFML/Window/GlResource.hpp \
  /usr/local/include/SFML/Window/ContextSettings.hpp \
  /usr/local/include/SFML/Window/Cursor.hpp \
  /usr/local/include/SFML/Window/Event.hpp \
@@ -243,18 +226,24 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/local/include/SFML/Window/WindowHandle.hpp \
  /usr/local/include/SFML/Window/WindowStyle.hpp \
  /usr/local/include/SFML/Graphics/BlendMode.hpp \
+ /usr/local/include/SFML/Graphics/Export.hpp \
  /usr/local/include/SFML/Graphics/CircleShape.hpp \
  /usr/local/include/SFML/Graphics/Shape.hpp \
  /usr/local/include/SFML/Graphics/Drawable.hpp \
  /usr/local/include/SFML/Graphics/RenderStates.hpp \
  /usr/local/include/SFML/Graphics/Transform.hpp \
+ /usr/local/include/SFML/Graphics/Rect.hpp \
+ /usr/local/include/SFML/Graphics/Rect.inl \
  /usr/local/include/SFML/Graphics/Transformable.hpp \
  /usr/local/include/SFML/Graphics/VertexArray.hpp \
  /usr/local/include/SFML/Graphics/Vertex.hpp \
+ /usr/local/include/SFML/Graphics/Color.hpp \
  /usr/local/include/SFML/Graphics/PrimitiveType.hpp \
  /usr/local/include/SFML/Graphics/ConvexShape.hpp \
  /usr/local/include/SFML/Graphics/Font.hpp \
  /usr/local/include/SFML/Graphics/Glyph.hpp \
+ /usr/local/include/SFML/Graphics/Texture.hpp \
+ /usr/local/include/SFML/Graphics/Image.hpp \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/map \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_tree.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/stl_map.h \
@@ -270,5 +259,6 @@ CMakeFiles/tileout.dir/src/tilemap.cpp.o: \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
  /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/initialization_of_tiles.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/../include/default_map_settings.h
+ /home/mr_Isachenko/merge/tp-project/include/character/view.h \
+ /home/mr_Isachenko/merge/tp-project/include/character/model.h \
+ /home/mr_Isachenko/merge/tp-project/include/character/control.h

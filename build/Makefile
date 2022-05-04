@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mr_Isachenko/projects/tp_project/tp-project
+CMAKE_SOURCE_DIR = /home/mr_Isachenko/merge/tp-project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mr_Isachenko/projects/tp_project/tp-project/build
+CMAKE_BINARY_DIR = /home/mr_Isachenko/merge/tp-project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mr_Isachenko/projects/tp_project/tp-project/build/CMakeFiles /home/mr_Isachenko/projects/tp_project/tp-project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mr_Isachenko/merge/tp-project/build/CMakeFiles /home/mr_Isachenko/merge/tp-project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mr_Isachenko/projects/tp_project/tp-project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mr_Isachenko/merge/tp-project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,24 +117,120 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tileout
+# Target rules for targets named proj
 
 # Build rule for target.
-tileout: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tileout
-.PHONY : tileout
+proj: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 proj
+.PHONY : proj
 
 # fast build rule for target.
-tileout/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/build
-.PHONY : tileout/fast
+proj/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/build
+.PHONY : proj/fast
+
+src/character/control.o: src/character/control.cpp.o
+.PHONY : src/character/control.o
+
+# target to build an object file
+src/character/control.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/control.cpp.o
+.PHONY : src/character/control.cpp.o
+
+src/character/control.i: src/character/control.cpp.i
+.PHONY : src/character/control.i
+
+# target to preprocess a source file
+src/character/control.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/control.cpp.i
+.PHONY : src/character/control.cpp.i
+
+src/character/control.s: src/character/control.cpp.s
+.PHONY : src/character/control.s
+
+# target to generate assembly for a file
+src/character/control.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/control.cpp.s
+.PHONY : src/character/control.cpp.s
+
+src/character/model.o: src/character/model.cpp.o
+.PHONY : src/character/model.o
+
+# target to build an object file
+src/character/model.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/model.cpp.o
+.PHONY : src/character/model.cpp.o
+
+src/character/model.i: src/character/model.cpp.i
+.PHONY : src/character/model.i
+
+# target to preprocess a source file
+src/character/model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/model.cpp.i
+.PHONY : src/character/model.cpp.i
+
+src/character/model.s: src/character/model.cpp.s
+.PHONY : src/character/model.s
+
+# target to generate assembly for a file
+src/character/model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/model.cpp.s
+.PHONY : src/character/model.cpp.s
+
+src/character/player.o: src/character/player.cpp.o
+.PHONY : src/character/player.o
+
+# target to build an object file
+src/character/player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/player.cpp.o
+.PHONY : src/character/player.cpp.o
+
+src/character/player.i: src/character/player.cpp.i
+.PHONY : src/character/player.i
+
+# target to preprocess a source file
+src/character/player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/player.cpp.i
+.PHONY : src/character/player.cpp.i
+
+src/character/player.s: src/character/player.cpp.s
+.PHONY : src/character/player.s
+
+# target to generate assembly for a file
+src/character/player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/player.cpp.s
+.PHONY : src/character/player.cpp.s
+
+src/character/view.o: src/character/view.cpp.o
+.PHONY : src/character/view.o
+
+# target to build an object file
+src/character/view.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/view.cpp.o
+.PHONY : src/character/view.cpp.o
+
+src/character/view.i: src/character/view.cpp.i
+.PHONY : src/character/view.i
+
+# target to preprocess a source file
+src/character/view.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/view.cpp.i
+.PHONY : src/character/view.cpp.i
+
+src/character/view.s: src/character/view.cpp.s
+.PHONY : src/character/view.s
+
+# target to generate assembly for a file
+src/character/view.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/character/view.cpp.s
+.PHONY : src/character/view.cpp.s
 
 src/convert_map_file_to_matrix.o: src/convert_map_file_to_matrix.cpp.o
 .PHONY : src/convert_map_file_to_matrix.o
 
 # target to build an object file
 src/convert_map_file_to_matrix.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/convert_map_file_to_matrix.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/convert_map_file_to_matrix.cpp.o
 .PHONY : src/convert_map_file_to_matrix.cpp.o
 
 src/convert_map_file_to_matrix.i: src/convert_map_file_to_matrix.cpp.i
@@ -142,7 +238,7 @@ src/convert_map_file_to_matrix.i: src/convert_map_file_to_matrix.cpp.i
 
 # target to preprocess a source file
 src/convert_map_file_to_matrix.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/convert_map_file_to_matrix.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/convert_map_file_to_matrix.cpp.i
 .PHONY : src/convert_map_file_to_matrix.cpp.i
 
 src/convert_map_file_to_matrix.s: src/convert_map_file_to_matrix.cpp.s
@@ -150,7 +246,7 @@ src/convert_map_file_to_matrix.s: src/convert_map_file_to_matrix.cpp.s
 
 # target to generate assembly for a file
 src/convert_map_file_to_matrix.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/convert_map_file_to_matrix.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/convert_map_file_to_matrix.cpp.s
 .PHONY : src/convert_map_file_to_matrix.cpp.s
 
 src/default_map_settings.o: src/default_map_settings.cpp.o
@@ -158,7 +254,7 @@ src/default_map_settings.o: src/default_map_settings.cpp.o
 
 # target to build an object file
 src/default_map_settings.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_map_settings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_map_settings.cpp.o
 .PHONY : src/default_map_settings.cpp.o
 
 src/default_map_settings.i: src/default_map_settings.cpp.i
@@ -166,7 +262,7 @@ src/default_map_settings.i: src/default_map_settings.cpp.i
 
 # target to preprocess a source file
 src/default_map_settings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_map_settings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_map_settings.cpp.i
 .PHONY : src/default_map_settings.cpp.i
 
 src/default_map_settings.s: src/default_map_settings.cpp.s
@@ -174,7 +270,7 @@ src/default_map_settings.s: src/default_map_settings.cpp.s
 
 # target to generate assembly for a file
 src/default_map_settings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_map_settings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_map_settings.cpp.s
 .PHONY : src/default_map_settings.cpp.s
 
 src/default_tile_settings.o: src/default_tile_settings.cpp.o
@@ -182,7 +278,7 @@ src/default_tile_settings.o: src/default_tile_settings.cpp.o
 
 # target to build an object file
 src/default_tile_settings.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_tile_settings.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_tile_settings.cpp.o
 .PHONY : src/default_tile_settings.cpp.o
 
 src/default_tile_settings.i: src/default_tile_settings.cpp.i
@@ -190,7 +286,7 @@ src/default_tile_settings.i: src/default_tile_settings.cpp.i
 
 # target to preprocess a source file
 src/default_tile_settings.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_tile_settings.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_tile_settings.cpp.i
 .PHONY : src/default_tile_settings.cpp.i
 
 src/default_tile_settings.s: src/default_tile_settings.cpp.s
@@ -198,15 +294,39 @@ src/default_tile_settings.s: src/default_tile_settings.cpp.s
 
 # target to generate assembly for a file
 src/default_tile_settings.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/default_tile_settings.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/default_tile_settings.cpp.s
 .PHONY : src/default_tile_settings.cpp.s
+
+src/game.o: src/game.cpp.o
+.PHONY : src/game.o
+
+# target to build an object file
+src/game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/game.cpp.o
+.PHONY : src/game.cpp.o
+
+src/game.i: src/game.cpp.i
+.PHONY : src/game.i
+
+# target to preprocess a source file
+src/game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/game.cpp.i
+.PHONY : src/game.cpp.i
+
+src/game.s: src/game.cpp.s
+.PHONY : src/game.s
+
+# target to generate assembly for a file
+src/game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/game.cpp.s
+.PHONY : src/game.cpp.s
 
 src/initialization_of_tiles.o: src/initialization_of_tiles.cpp.o
 .PHONY : src/initialization_of_tiles.o
 
 # target to build an object file
 src/initialization_of_tiles.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/initialization_of_tiles.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/initialization_of_tiles.cpp.o
 .PHONY : src/initialization_of_tiles.cpp.o
 
 src/initialization_of_tiles.i: src/initialization_of_tiles.cpp.i
@@ -214,7 +334,7 @@ src/initialization_of_tiles.i: src/initialization_of_tiles.cpp.i
 
 # target to preprocess a source file
 src/initialization_of_tiles.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/initialization_of_tiles.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/initialization_of_tiles.cpp.i
 .PHONY : src/initialization_of_tiles.cpp.i
 
 src/initialization_of_tiles.s: src/initialization_of_tiles.cpp.s
@@ -222,7 +342,7 @@ src/initialization_of_tiles.s: src/initialization_of_tiles.cpp.s
 
 # target to generate assembly for a file
 src/initialization_of_tiles.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/initialization_of_tiles.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/initialization_of_tiles.cpp.s
 .PHONY : src/initialization_of_tiles.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -230,7 +350,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -238,7 +358,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -246,7 +366,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 src/tile.o: src/tile.cpp.o
@@ -254,7 +374,7 @@ src/tile.o: src/tile.cpp.o
 
 # target to build an object file
 src/tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tile.cpp.o
 .PHONY : src/tile.cpp.o
 
 src/tile.i: src/tile.cpp.i
@@ -262,7 +382,7 @@ src/tile.i: src/tile.cpp.i
 
 # target to preprocess a source file
 src/tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tile.cpp.i
 .PHONY : src/tile.cpp.i
 
 src/tile.s: src/tile.cpp.s
@@ -270,7 +390,7 @@ src/tile.s: src/tile.cpp.s
 
 # target to generate assembly for a file
 src/tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tile.cpp.s
 .PHONY : src/tile.cpp.s
 
 src/tilemap.o: src/tilemap.cpp.o
@@ -278,7 +398,7 @@ src/tilemap.o: src/tilemap.cpp.o
 
 # target to build an object file
 src/tilemap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tilemap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tilemap.cpp.o
 .PHONY : src/tilemap.cpp.o
 
 src/tilemap.i: src/tilemap.cpp.i
@@ -286,7 +406,7 @@ src/tilemap.i: src/tilemap.cpp.i
 
 # target to preprocess a source file
 src/tilemap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tilemap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tilemap.cpp.i
 .PHONY : src/tilemap.cpp.i
 
 src/tilemap.s: src/tilemap.cpp.s
@@ -294,7 +414,7 @@ src/tilemap.s: src/tilemap.cpp.s
 
 # target to generate assembly for a file
 src/tilemap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tileout.dir/build.make CMakeFiles/tileout.dir/src/tilemap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/proj.dir/build.make CMakeFiles/proj.dir/src/tilemap.cpp.s
 .PHONY : src/tilemap.cpp.s
 
 # Help Target
@@ -305,7 +425,19 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... tileout"
+	@echo "... proj"
+	@echo "... src/character/control.o"
+	@echo "... src/character/control.i"
+	@echo "... src/character/control.s"
+	@echo "... src/character/model.o"
+	@echo "... src/character/model.i"
+	@echo "... src/character/model.s"
+	@echo "... src/character/player.o"
+	@echo "... src/character/player.i"
+	@echo "... src/character/player.s"
+	@echo "... src/character/view.o"
+	@echo "... src/character/view.i"
+	@echo "... src/character/view.s"
 	@echo "... src/convert_map_file_to_matrix.o"
 	@echo "... src/convert_map_file_to_matrix.i"
 	@echo "... src/convert_map_file_to_matrix.s"
@@ -315,6 +447,9 @@ help:
 	@echo "... src/default_tile_settings.o"
 	@echo "... src/default_tile_settings.i"
 	@echo "... src/default_tile_settings.s"
+	@echo "... src/game.o"
+	@echo "... src/game.i"
+	@echo "... src/game.s"
 	@echo "... src/initialization_of_tiles.o"
 	@echo "... src/initialization_of_tiles.i"
 	@echo "... src/initialization_of_tiles.s"

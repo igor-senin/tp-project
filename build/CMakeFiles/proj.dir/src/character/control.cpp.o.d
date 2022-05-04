@@ -1,8 +1,10 @@
-CMakeFiles/tileout.dir/src/main.cpp.o: \
- /home/mr_Isachenko/projects/tp_project/tp-project/src/main.cpp \
- /usr/include/stdc-predef.h /usr/local/include/SFML/Graphics.hpp \
- /usr/local/include/SFML/Window.hpp /usr/local/include/SFML/System.hpp \
- /usr/local/include/SFML/Config.hpp \
+CMakeFiles/proj.dir/src/character/control.cpp.o: \
+ /home/mr_Isachenko/merge/tp-project/src/character/control.cpp \
+ /usr/include/stdc-predef.h \
+ /home/mr_Isachenko/merge/tp-project/include/character/control.h \
+ /home/mr_Isachenko/merge/tp-project/include/character/model.h \
+ /usr/local/include/SFML/Graphics.hpp /usr/local/include/SFML/Window.hpp \
+ /usr/local/include/SFML/System.hpp /usr/local/include/SFML/Config.hpp \
  /usr/local/include/SFML/System/Clock.hpp \
  /usr/local/include/SFML/System/Export.hpp \
  /usr/local/include/SFML/System/Time.hpp \
@@ -257,17 +259,4 @@ CMakeFiles/tileout.dir/src/main.cpp.o: \
  /usr/local/include/SFML/Graphics/Glsl.inl \
  /usr/local/include/SFML/Graphics/Sprite.hpp \
  /usr/local/include/SFML/Graphics/Text.hpp \
- /usr/local/include/SFML/Graphics/VertexBuffer.hpp \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/tilemap.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/convert_map_file_to_matrix.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/fstream \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/fstream.tcc \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/tile.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/default_tile_settings.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/initialization_of_tiles.h \
- /home/mr_Isachenko/projects/tp_project/tp-project/include/default_map_settings.h
+ /usr/local/include/SFML/Graphics/VertexBuffer.hpp
