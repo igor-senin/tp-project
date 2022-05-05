@@ -15,6 +15,7 @@ class TileMap {
   void InitSprites();
   void Draw(sf::RenderWindow& window);
   void Render(sf::RenderTarget&);
+  std::vector<std::vector<sf::Sprite>>& GetSpriteMap();
 
   const std::vector<std::vector<MainTile*>>& GetTileMap();
 

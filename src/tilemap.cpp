@@ -1,4 +1,4 @@
-#include "../include/tilemap.h"
+#include "tilemap.h"
 #include "default_map_settings.h"
 #include <SFML/Graphics/Rect.hpp>
 #include <SFML/Graphics/RenderWindow.hpp>
@@ -45,4 +45,8 @@ void TileMap::ChangeTile(MainTile* another, int x_coordinate,
 
 const std::vector<std::vector<MainTile*>>& TileMap::GetTileMap() {
   return tile_map_;
+}
+
+std::vector<std::vector<sf::Sprite>>& TileMap::GetSpriteMap() {
+  return sprites_;
 }
