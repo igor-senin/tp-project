@@ -5,18 +5,22 @@
 #include <view.h>
 #include <model.h>
 #include <control.h>
+#include <tilemap.h>
 
 
 class Player {
  private:
-  void init();
 
   View view;
   Model model;
   Control control;
 
+  TileMap* tile_map;
+
+  sf::Vector2u window_sizes;
+
  public:
-  Player();
+  Player(TileMap*, sf::Vector2u);
   ~Player() = default;
 
   sf::FloatRect getGlobalBounds() const;
@@ -24,6 +28,8 @@ class Player {
 
   void setPosition(float, float);
   void landedY();
+
+  void updateCollision();
 
   void update();
   void render(sf::RenderTarget& target);

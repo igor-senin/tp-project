@@ -4,4 +4,3 @@
 cd bin
 ./proj
 cd ..
-
