@@ -36,6 +36,7 @@ class Model {
   void updatePreviousCondition();
   void updatePhysics();
   void changeVelocity(float, float);
+  void setVelocity(float, float);
   void landedY();
   sf::Vector2f getVelocity();
 

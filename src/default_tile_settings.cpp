@@ -1,16 +1,21 @@
 #include "default_tile_settings.h"
 
-int default_tile_settings::air_damage = 0;
+int default_tile_settings::air_tile_damage = 0;
 int default_tile_settings::default_tile_damage = 0;
 int default_tile_settings::damage_tile_damage = 10;
 int default_tile_settings::stone_tile_damage = 0;
 
-bool default_tile_settings::air_is_wall = false;
+float default_tile_settings::air_tile_scale = 2.297;
+float default_tile_settings::default_tile_scale = 2.297;
+float default_tile_settings::damage_tile_scale = 2.297;
+float default_tile_settings::stone_tile_scale = 2.297;
+
+bool default_tile_settings::air_tile_is_wall = false;
 bool default_tile_settings::damage_tile_is_wall = true;
 bool default_tile_settings::default_tile_is_wall = false;
 bool default_tile_settings::stone_tile_is_wall = true;
 
-std::string default_tile_settings::air_path_to_texture = 
+std::string default_tile_settings::air_tile_path_to_texture = 
     "../resources/graphics-vertex-array-tilemap-tileset.png";
 std::string default_tile_settings::default_tile_path_to_texture = 
     "../resources/graphics-vertex-array-tilemap-tileset.png";
@@ -19,7 +24,7 @@ std::string default_tile_settings::damage_tile_path_to_texture =
 std::string default_tile_settings::stone_tile_path_to_texture = 
     "../resources/graphics-vertex-array-tilemap-tileset.png";
 
-char default_tile_settings::air_default_short_name = 'a';
+char default_tile_settings::air_tile_default_short_name = 'a';
 char default_tile_settings::default_tile_default_short_name = 'u';
 char default_tile_settings::damage_tile_default_short_name = 'd';
 char default_tile_settings::stone_tile_default_short_name = 's';

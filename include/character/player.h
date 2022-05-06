@@ -27,8 +27,10 @@ class Player {
   sf::Vector2f getPosition() const;
 
   void setPosition(float, float);
+  void setVelocity(float, float);
   void landedY();
 
+  std::pair<sf::Vector2f, sf::Vector2f> getCorners() const;
   void updateCollision();
 
   void update();

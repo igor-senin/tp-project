@@ -18,7 +18,7 @@ void TileMap::InitSprites() {
     for (int j = 0; j < tile_map_[i].size(); ++j) {
       sprites_[i][j].setTexture(tile_map_[i][j]->GetTexture());
       sprites_[i][j].setScale(sf::Vector2f(
-          default_map_settings::scale_size, default_map_settings::scale_size));
+          tile_map_[i][j]->GetScale(), tile_map_[i][j]->GetScale())); 
       sprites_[i][j].setPosition(
           sf::Vector2f(default_map_settings::start_map_coordinate_x + 
                        float(j) * default_map_settings::tile_size, 

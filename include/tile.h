@@ -13,18 +13,20 @@ class MainTile {
   std::string path_to_texture_;
   sf::Texture texture_;
   bool is_wall_;
+  float scale_size;
   
  public:
-  MainTile(int, std::string&, bool);
+  MainTile(int, std::string&, bool, float);
   void InitTexture(int, int, int, int);  // coordinates from image (make intrect)
   int GetDamage();
   bool IsWall();
+  float GetScale();
   sf::Texture& GetTexture();
 };
 
-class Air: public MainTile {
+class AirTile: public MainTile {
  public:
-  Air();
+  AirTile();
 };
 
 class DefaultTile: public MainTile {

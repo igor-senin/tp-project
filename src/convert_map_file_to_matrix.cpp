@@ -20,7 +20,7 @@ void ConvertToMapFromFile::ConvertingTiles() {
   for (int i = 0; i < map_.size(); ++i) {
     std::vector<MainTile*> temp;
     for (int j = 0; j < map_[i].size(); ++j) {
-      if (map_[i][j] == default_tile_settings::air_default_short_name) {
+      if (map_[i][j] == default_tile_settings::air_tile_default_short_name) {
         temp.push_back(reinterpret_cast<MainTile*>(&tile::air_tile));
         continue;
       }

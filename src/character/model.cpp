@@ -35,6 +35,10 @@ void Model::changeVelocity(float dir_x, float dir_y) {
   }
 }
 
+void Model::setVelocity(float x, float y) {
+  velocity = sf::Vector2f(x, y);
+}
+
 void Model::landedY() {
   velocity.y = 0.f;
   isGrounded = true;
