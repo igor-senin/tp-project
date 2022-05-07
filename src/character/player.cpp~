@@ -89,12 +89,12 @@ void Player::updateCollision() {
       }
       if (chr_r > spr_l and chr_l < spr_l) {
         right = true;
-        right_c = spr_l;
+        left_c = spr_l;
       }
     }
   }
   if (floor) {
-    landedY();
+    setVelocity(model.getVelocity().x, 0.f);
     setPosition(getPosition().x, floor_c - getGlobalBounds().height);
   }
   if (top) {
