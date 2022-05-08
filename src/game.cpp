@@ -2,8 +2,8 @@
 #include <iostream>
 
 void Game::initWindow() {
-  window.create(sf::VideoMode(2000, 1000), "Game",
-                sf::Style::Fullscreen);
+  window.create(sf::VideoMode(400, 400), "Game"
+                /*sf::Style::Fullscreen*/);
   window.setFramerateLimit(80);
 
   std::cout << window.getSize().x << ' ' << window.getSize().y << '\n';

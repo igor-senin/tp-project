@@ -1,17 +1,7 @@
-15 * 25
+5 * 15
 
-aaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaa
-saaaaaaaaaaaaaaaaaaaaaaas
-saaaaaaaaaaaaadusssssssss
-saaaaaaaaaaaaadusssssssss
-saaaaaaaaaaaaaaasssssssss
-saaaaaaaaaaaaaaasssssssss
-saaaaaaaaaaaaaaasssssssss
-aaaaaasssssssssssssssssss
-aaaaassssssssssssssssssss
-aaaasssssssssssssssssssss
-aaassssssssssssssssssssss
-aasssssssssssssssssssssss
-assssssssssssssssssssssss
-sssssssssssssssssssssssss
+aaaaaaaaaaaaass
+aaaaaaaaaaaaass
+aaaaaaaaaaaaass
+aaaaaaaaaaaaass
+sssssssssssssss
