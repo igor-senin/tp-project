@@ -1,0 +1,7 @@
+mkdir: cannot create directory ‘build’: File exists
+-- Found SFML 2.5.1 in /usr/local/lib/cmake/SFML
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/mr_Isachenko/projects/tp_project/tp-project/build
+Consolidate compiler generated dependencies of target proj
+[100%] Built target proj

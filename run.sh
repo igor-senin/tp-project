@@ -1,6 +1,6 @@
 #! /bin/bash
 
-./install.sh
+./install.sh &> log_file.txt
 cd bin
-./proj
+./proj &>> log_file.txt
 cd ..

@@ -1974,6 +1974,9 @@ CMakeFiles/proj.dir/src/default_tile_settings.cpp.o: ../src/default_tile_setting
 
 CMakeFiles/proj.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/include/stdc-predef.h \
+  /usr/local/include/SFML/System/Vector2.hpp \
+  /usr/local/include/SFML/System/Vector2.inl \
+  /usr/local/include/SFML/Window/WindowStyle.hpp \
   ../include/game.h \
   /usr/local/include/SFML/Graphics.hpp \
   /usr/local/include/SFML/Window.hpp \
@@ -2215,8 +2218,6 @@ CMakeFiles/proj.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/local/include/SFML/System/ThreadLocal.hpp \
   /usr/local/include/SFML/System/ThreadLocalPtr.hpp \
   /usr/local/include/SFML/System/ThreadLocalPtr.inl \
-  /usr/local/include/SFML/System/Vector2.hpp \
-  /usr/local/include/SFML/System/Vector2.inl \
   /usr/local/include/SFML/System/Vector3.hpp \
   /usr/local/include/SFML/System/Vector3.inl \
   /usr/local/include/SFML/Window/Clipboard.hpp \
@@ -2234,7 +2235,6 @@ CMakeFiles/proj.dir/src/game.cpp.o: ../src/game.cpp \
   /usr/local/include/SFML/Window/VideoMode.hpp \
   /usr/local/include/SFML/Window/Window.hpp \
   /usr/local/include/SFML/Window/WindowHandle.hpp \
-  /usr/local/include/SFML/Window/WindowStyle.hpp \
   /usr/local/include/SFML/Graphics/BlendMode.hpp \
   /usr/local/include/SFML/Graphics/Export.hpp \
   /usr/local/include/SFML/Graphics/CircleShape.hpp \

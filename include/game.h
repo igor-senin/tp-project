@@ -9,6 +9,7 @@
 class Game {
  private:
   sf::RenderWindow window;
+  sf::RenderWindow start_window;
 
   Player* player;
 
@@ -16,6 +17,7 @@ class Game {
 
   void initPlayer();
   void initWindow();
+  void initStartWindow();
   void initTilemap();
 
  public:
@@ -24,6 +26,7 @@ class Game {
 
   // Functions
   void updateWindow();
+  void updateStartWindow();
   void updatePlayer();
   void update();
 
