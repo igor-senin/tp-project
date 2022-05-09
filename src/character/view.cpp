@@ -41,6 +41,7 @@ void View::stay() {
     animationTimer.restart();
     sprite.setTextureRect(currentFrame);
   }
+  sprite.setOrigin(0.f, 0.f);
 }
 
 void View::moveRight() {
@@ -69,6 +70,7 @@ void View::jump() {
   }
   sprite.setScale(frame_scale);
   sprite.setTextureRect(currentFrame);
+  sprite.setOrigin(0.f, 0.f);
 }
 
 void View::fall() {
@@ -76,6 +78,7 @@ void View::fall() {
   currentFrame.left = 2568;
   sprite.setScale(frame_scale);
   sprite.setTextureRect(currentFrame);
+  sprite.setOrigin(0.f, 0.f);
 }
 
 void View::turn() {
