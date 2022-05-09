@@ -1,0 +1,6 @@
+Карта предствляет собой прямоугольник пример которого можно найти в
+../resources/map_example.txt
+Карта состоит из элементов класса tile, подробнее о них можно почитать в
+information_about_tiles.txt
+Имеется файл настроек карты: default_map_settings.h
+Также файл текущих настроек: default_map_settings.cpp

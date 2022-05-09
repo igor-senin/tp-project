@@ -70,10 +70,9 @@ break_point:
 void Game::updateWindow() {
   sf::Event ev;
   while (window.pollEvent(ev)) {
-    if (ev.type == sf::Event::Closed
-    or (ev.type == sf::Event::KeyPressed
-    and ev.key.code == sf::Keyboard::Escape) 
-    or this->player->IsGameWin()) {
+    if (ev.type == sf::Event::Closed or 
+       (ev.type == sf::Event::KeyPressed and ev.key.code == sf::Keyboard::Escape) or 
+        this->player->IsGameWin()) {
       window.close();
     }
   }
