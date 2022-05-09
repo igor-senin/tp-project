@@ -637,16 +637,7 @@ CMakeFiles/proj.dir/src/character/player.cpp.o: ../src/character/player.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/range_access.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/uses_allocator.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/invoke.h \
-  ../include/character/player.h \
-  ../include/character/model.h \
-  /usr/local/include/SFML/Graphics.hpp \
-  /usr/local/include/SFML/Window.hpp \
-  /usr/local/include/SFML/System.hpp \
-  /usr/local/include/SFML/Config.hpp \
-  /usr/local/include/SFML/System/Clock.hpp \
-  /usr/local/include/SFML/System/Export.hpp \
-  /usr/local/include/SFML/System/Time.hpp \
-  /usr/local/include/SFML/System/Err.hpp \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ostream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/ios \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iosfwd \
@@ -790,6 +781,18 @@ CMakeFiles/proj.dir/src/character/player.cpp.o: ../src/character/player.cpp \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/locale_facets.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/basic_ios.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc \
+  ../include/character/player.h \
+  ../include/character/model.h \
+  /usr/local/include/SFML/Graphics.hpp \
+  /usr/local/include/SFML/Window.hpp \
+  /usr/local/include/SFML/System.hpp \
+  /usr/local/include/SFML/Config.hpp \
+  /usr/local/include/SFML/System/Clock.hpp \
+  /usr/local/include/SFML/System/Export.hpp \
+  /usr/local/include/SFML/System/Time.hpp \
+  /usr/local/include/SFML/System/Err.hpp \
   /usr/local/include/SFML/System/FileInputStream.hpp \
   /usr/local/include/SFML/System/InputStream.hpp \
   /usr/local/include/SFML/System/NonCopyable.hpp \
@@ -899,9 +902,6 @@ CMakeFiles/proj.dir/src/character/player.cpp.o: ../src/character/player.cpp \
   ../include/character/control.h \
   ../include/tilemap.h \
   ../include/convert_map_file_to_matrix.h \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/fstream \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -3540,13 +3540,13 @@ CMakeFiles/proj.dir/src/tilemap.cpp.o: ../src/tilemap.cpp \
 
 ../include/default_tile_settings.h:
 
+../include/character/player.h:
+
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/bits/istream.tcc:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/istream:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.2.1/include/g++-v11/iostream:
-
-../include/character/player.h:
 
 ../src/character/player.cpp:
 

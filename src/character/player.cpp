@@ -1,4 +1,5 @@
 #include <tuple>
+#include <iostream>
 
 #include "player.h"
 #include "tilemap.h"
@@ -17,7 +18,10 @@ void Player::update() {
 
 Player::Player(TileMap* tile_map, sf::Vector2u window_sizes):
 model(Model()), control(Control(&model)), view(View(&model)),
-tile_map(tile_map), window_sizes(window_sizes) {}
+tile_map(tile_map), window_sizes(window_sizes) 
+{
+  finish = false;
+}
 
 sf::FloatRect Player::getGlobalBounds() const {
   return view.getGlobalBounds();
@@ -65,13 +69,16 @@ void Player::updateCollision() {
 
       top = floor = left = right = false;
 
-      if (!tile_map->GetTileMap()[i][j]->IsWall()) { continue; }
+      if (!tile_map->GetTileMap()[i][j]->IsWall() && !tile_map->GetTileMap()[i][j]->IsFinish()) { continue; }
 
       auto [spr_l, spr_t, spr_r, spr_f] = getTileCorners(i, j);
       {
       auto [chr_l, chr_t, chr_r, chr_f] = getCorners();
 
       if (!intersects(spr_l, spr_r, chr_l, chr_r) or !intersects(spr_t, spr_f, chr_t, chr_f)) continue;
+
+      if (tile_map->GetTileMap()[i][j]->IsFinish()) { finish = true; }
+
       if (chr_f > spr_t and chr_t < spr_t) { floor = true; floor_c = spr_t; }
 
       if (floor) {
@@ -124,3 +131,4 @@ sf::Vector2f Player::getPosition() const {
 void Player::render(sf::RenderTarget& target) {
   view.render(target);
 }
+bool Player::IsGameWin() const { return finish; }

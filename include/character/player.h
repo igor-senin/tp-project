@@ -16,6 +16,7 @@ class Player {
   View view;
   Model model;
   Control control;
+  bool finish;
 
   TileMap* tile_map;
 
@@ -31,6 +32,8 @@ class Player {
   void setPosition(float, float);
   void setVelocity(float, float);
   void landedY();
+
+  bool IsGameWin() const;
 
   std::tuple<float, float, float, float> getCorners() const;
   std::tuple<float, float, float, float>
