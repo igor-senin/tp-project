@@ -1,5 +1,8 @@
+#include <tuple>
+
 #include "player.h"
 #include "tilemap.h"
+
 #include <SFML/System/Vector2.hpp>
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
@@ -32,10 +35,18 @@ void Player::landedY() {
   model.landedY();
 }
 
-std::pair<sf::Vector2f, sf::Vector2f> Player::getCorners() const {
-  return {getPosition(),
-    sf::Vector2f(getPosition().x + getGlobalBounds().width,
-      getPosition().y + getGlobalBounds().height)};
+std::tuple<float, float, float, float> Player::getCorners() const {
+  return std::make_tuple(getPosition().x, getPosition().y,
+    getPosition().x + getGlobalBounds().width,
+    getPosition().y + getGlobalBounds().height);
+}
+
+std::tuple<float, float, float, float>
+Player::getTileCorners(std::size_t i, std::size_t j) const {
+  auto tile_info = tile_map->GetSpriteMap()[i][j].getGlobalBounds();
+  return std::make_tuple(tile_info.left, tile_info.top,
+    tile_info.left + tile_info.width,
+    tile_info.top + tile_info.height);
 }
 
 bool intersects(float x1, float x2, float y1, float y2) {
@@ -56,18 +67,9 @@ void Player::updateCollision() {
 
       if (!tile_map->GetTileMap()[i][j]->IsWall()) { continue; }
 
-      auto corners = getCorners();
-      auto chr_t = corners.first.y;
-      auto chr_f = corners.second.y;
-      auto chr_l = corners.first.x;
-      auto chr_r = corners.second.x;
-
-      auto sprite_info = tile_map->GetSpriteMap()[i][j].getGlobalBounds();
-      auto spr_t = sprite_info.top;
-      auto spr_f = spr_t + sprite_info.height;
-      auto spr_l = sprite_info.left;
-      auto spr_r = spr_l + sprite_info.width;
-
+      auto [spr_l, spr_t, spr_r, spr_f] = getTileCorners(i, j);
+      {
+      auto [chr_l, chr_t, chr_r, chr_f] = getCorners();
 
       if (!intersects(spr_l, spr_r, chr_l, chr_r) or !intersects(spr_t, spr_f, chr_t, chr_f)) continue;
       if (chr_f > spr_t and chr_t < spr_t) { floor = true; floor_c = spr_t; }
@@ -76,18 +78,10 @@ void Player::updateCollision() {
         landedY();
         setPosition(getPosition().x, floor_c - getGlobalBounds().height);
       }
-      
-      corners = getCorners();
-      chr_t = corners.first.y;
-      chr_f = corners.second.y;
-      chr_l = corners.first.x;
-      chr_r = corners.second.x;
-      sprite_info = tile_map->GetSpriteMap()[i][j].getGlobalBounds();
-      spr_t = sprite_info.top;
-      spr_f = spr_t + sprite_info.height;
-      spr_l = sprite_info.left;
-      spr_r = spr_l + sprite_info.width;
-      
+      }
+     
+      {
+      auto [chr_l, chr_t, chr_r, chr_f] = getCorners();
 
       if (!intersects(spr_l, spr_r, chr_l, chr_r) or !intersects(spr_t, spr_f, chr_t, chr_f)) continue;
       if (chr_l < spr_r and chr_r > spr_r) { left = true; left_c = spr_r; } 
@@ -95,16 +89,10 @@ void Player::updateCollision() {
         setVelocity(0.f, model.getVelocity().y);
         setPosition(left_c, getPosition().y);
       }
-      corners = getCorners();
-      chr_t = corners.first.y;
-      chr_f = corners.second.y;
-      chr_l = corners.first.x;
-      chr_r = corners.second.x;
-      sprite_info = tile_map->GetSpriteMap()[i][j].getGlobalBounds();
-      spr_t = sprite_info.top;
-      spr_f = spr_t + sprite_info.height;
-      spr_l = sprite_info.left;
-      spr_r = spr_l + sprite_info.width;
+      }
+
+      {
+      auto [chr_l, chr_t, chr_r, chr_f] = getCorners();
 
       if (!intersects(spr_l, spr_r, chr_l, chr_r) or !intersects(spr_t, spr_f, chr_t, chr_f)) continue;
       if (chr_r > spr_l and chr_l < spr_l) { right = true; right_c = spr_l; }
@@ -112,17 +100,10 @@ void Player::updateCollision() {
         setVelocity(0.f, model.getVelocity().y);
         setPosition(right_c - getGlobalBounds().width, getPosition().y);
       }
+      }
 
-      corners = getCorners();
-      chr_t = corners.first.y;
-      chr_f = corners.second.y;
-      chr_l = corners.first.x;
-      chr_r = corners.second.x;
-      sprite_info = tile_map->GetSpriteMap()[i][j].getGlobalBounds();
-      spr_t = sprite_info.top;
-      spr_f = spr_t + sprite_info.height;
-      spr_l = sprite_info.left;
-      spr_r = spr_l + sprite_info.width;
+      {
+      auto [chr_l, chr_t, chr_r, chr_f] = getCorners();
 
       if (!intersects(spr_l, spr_r, chr_l, chr_r) or !intersects(spr_t, spr_f, chr_t, chr_f)) continue;
       if (chr_t < spr_f and chr_f > spr_f) { top = true; top_c = spr_f; } 
@@ -130,7 +111,8 @@ void Player::updateCollision() {
         setVelocity(model.getVelocity().x, 0.f);
         setPosition(getPosition().x, top_c);
       }
-
+      }
+ 
     }
   }
 }

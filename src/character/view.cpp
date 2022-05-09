@@ -103,6 +103,7 @@ void View::updateAnimations() {
       fall();
       break;
     default:
+      stay();
       break;
   }
 

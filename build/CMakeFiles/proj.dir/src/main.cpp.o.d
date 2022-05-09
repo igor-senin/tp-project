@@ -240,7 +240,6 @@ CMakeFiles/proj.dir/src/main.cpp.o: \
  /usr/include/SFML/Graphics/VertexBuffer.hpp \
  /home/igor/projects/tp-project/include/game.h \
  /home/igor/projects/tp-project/include/character/player.h \
- /home/igor/projects/tp-project/include/character/view.h \
  /home/igor/projects/tp-project/include/character/model.h \
  /home/igor/projects/tp-project/include/character/control.h \
  /home/igor/projects/tp-project/include/tilemap.h \
@@ -253,4 +252,5 @@ CMakeFiles/proj.dir/src/main.cpp.o: \
  /home/igor/projects/tp-project/include/tile.h \
  /home/igor/projects/tp-project/include/default_tile_settings.h \
  /home/igor/projects/tp-project/include/initialization_of_tiles.h \
- /home/igor/projects/tp-project/include/default_map_settings.h
+ /home/igor/projects/tp-project/include/default_map_settings.h \
+ /home/igor/projects/tp-project/include/character/view.h

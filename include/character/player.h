@@ -1,12 +1,14 @@
 #ifndef TEST_GAME_INCLUDE_PLAYER_H_
 #define TEST_GAME_INCLUDE_PLAYER_H_
 
-#include <SFML/Graphics.hpp>
-#include <view.h>
+#include <tuple>
+
 #include <model.h>
 #include <control.h>
 #include <tilemap.h>
+#include <view.h>
 
+#include <SFML/Graphics.hpp>
 
 class Player {
  private:
@@ -30,7 +32,9 @@ class Player {
   void setVelocity(float, float);
   void landedY();
 
-  std::pair<sf::Vector2f, sf::Vector2f> getCorners() const;
+  std::tuple<float, float, float, float> getCorners() const;
+  std::tuple<float, float, float, float>
+    getTileCorners(std::size_t, std::size_t) const;
   void updateCollision();
 
   void update();

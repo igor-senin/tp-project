@@ -19,14 +19,14 @@ class Model {
   const float minVelocity = 0.5f;
   const float maxVelocityX = 7.5f;
   const float maxVelocityY = 15.f;
-  const float gravity = 0.6f;
-  const float drag = 0.96f;
+  const float gravity = 0.7f;
+  const float drag = 0.94f;
   const float acceleration = 2.f;
 
  public:
   bool isGrounded = false;
   bool touchesRightWall = false;
-  bool touchesLeftWall = false; // TODO : not public
+  bool touchesLeftWall = false;
   bool looksRight = true;
 
   int state = 0;
