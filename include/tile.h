@@ -14,13 +14,15 @@ class MainTile {
   sf::Texture texture_;
   bool is_wall_;
   float scale_size;
+  bool is_finish_;
   
  public:
-  MainTile(int, std::string&, bool, float);
+  MainTile(int, std::string&, bool, float, bool);
   void InitTexture(int, int, int, int);  // coordinates from image (make intrect)
   int GetDamage();
   bool IsWall();
   float GetScale();
+  bool IsFinish();
   sf::Texture& GetTexture();
 };
 
@@ -29,9 +31,9 @@ class AirTile: public MainTile {
   AirTile();
 };
 
-class DefaultTile: public MainTile {
+class FinishTile: public MainTile {
  public:
-  DefaultTile();
+  FinishTile();
 };
 
 class DamageTile: public MainTile {

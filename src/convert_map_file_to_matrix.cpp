@@ -28,8 +28,8 @@ void ConvertToMapFromFile::ConvertingTiles() {
         temp.push_back(reinterpret_cast<MainTile*>(&tile::damage_tile));
         continue;
       }
-      if (map_[i][j] == default_tile_settings::default_tile_default_short_name) {
-        temp.push_back(reinterpret_cast<MainTile*>(&tile::default_tile));
+      if (map_[i][j] == default_tile_settings::finish_tile_default_short_name) {
+        temp.push_back(reinterpret_cast<MainTile*>(&tile::finish_tile));
         continue;
       }
       if (map_[i][j] == default_tile_settings::stone_tile_default_short_name) {

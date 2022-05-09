@@ -1,12 +1,17 @@
-10 * 20
+15 * 23
 
-aaaaaaaaaaaaaaaaaaas
-aaaaaaaaaaaaaaaaaaas
-aaaaaaaaaaaaaaaaaaas
-aaaaaaaaaassssssssss
-aaaaaaaaasaaaaaaaaas
-aaaaaaaasaaaaaaaaaas
-aaaaaaasaaaaaaaaaaas
-aaaaaasaaaaaaaaaaaas
-aaaaasaaaaaaaaaaaaas
-ssssssssssssssssssss
+saaaaaaaaaaaaaaaaaaaaas
+saaaaaaaaaaaaaaaaaaaaas
+saaaaaaaaaaaaaaaaaaaaas
+saaaaaaaaaaaaaaaaaaaafs
+saaaaaaaaaaaaaaaaaaaafs
+saaaaaaaaaaaaaassssssss
+saaaaaaaaaaaaaasaaassss
+saaaaaaaasaaaaaaaaassss
+saaaaaaasaaaaaaaaaassss
+saaaaaasaaaaaaaaaaassss
+saaaaasaaaaaaaaaaaassss
+saaaasaaaaaaaaaaaaassss
+saaasaaaaaaaaaaaaaassss
+sssssssssssssssssssssss
+sssssssssssssssssssssss
