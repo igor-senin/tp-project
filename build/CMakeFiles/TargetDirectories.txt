@@ -1,3 +1,0 @@
-/home/igor/projects/tp-project/build/CMakeFiles/proj.dir
-/home/igor/projects/tp-project/build/CMakeFiles/edit_cache.dir
-/home/igor/projects/tp-project/build/CMakeFiles/rebuild_cache.dir
