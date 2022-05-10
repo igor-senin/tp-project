@@ -9,6 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 find_package(SFML COMPONENTS graphics window system REQUIRED)
 set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_COMPILER "clang++")
 
 include_directories(${CMAKE_SOURCE_DIR}
                     "include" 
