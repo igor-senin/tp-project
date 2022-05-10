@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mr_Isachenko/projects/tp_project/tp-project -I/home/mr_Isachenko/projects/tp_project/tp-project/include -I/home/mr_Isachenko/projects/tp_project/tp-project/src -I/home/mr_Isachenko/projects/tp_project/tp-project/resources -I/home/mr_Isachenko/projects/tp_project/tp-project/include/character
+CXX_INCLUDES = -I/home/igor/projects/tp-project -I/home/igor/projects/tp-project/include -I/home/igor/projects/tp-project/src -I/home/igor/projects/tp-project/resources -I/home/igor/projects/tp-project/include/character
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = 
 

@@ -36,7 +36,7 @@ void View::stay() {
     currentFrame.top = line_starts[1];
     currentFrame.left += frame_sizes.x;
     if (currentFrame.left >= number_of_frames_in_line[1] * frame_sizes.x) {
-      currentFrame.left = 0;
+      currentFrame.left = 2;
     }
     animationTimer.restart();
     sprite.setTextureRect(currentFrame);
@@ -48,7 +48,7 @@ void View::moveRight() {
   if (animationTimer.getElapsedTime().asSeconds() >= 0.07f) {
     currentFrame.left += frame_sizes.x;
     if (currentFrame.left >= number_of_frames_in_line[2] * frame_sizes.x) {
-      currentFrame.left = 0;
+      currentFrame.left = 2;
       currentFrame.top =
           line_starts[(currentFrame.top == line_starts[2] ? 3 : 2)];
     }
@@ -61,10 +61,10 @@ void View::moveRight() {
 
 void View::jump() {
   if (animationTimer.getElapsedTime().asSeconds() >= 0.17f) {
-    currentFrame.top = 0;
+    currentFrame.top = 2;
     currentFrame.left += frame_sizes.x;
     if (currentFrame.left >= number_of_frames_in_line[0] * frame_sizes.x) {
-      currentFrame.left = 0;
+      currentFrame.left = 2;
     }
     animationTimer.restart();
   }
@@ -74,8 +74,8 @@ void View::jump() {
 }
 
 void View::fall() {
-  currentFrame.top = 0;
-  currentFrame.left = 2568;
+  currentFrame.top = 2;
+  currentFrame.left = 2569;
   sprite.setScale(frame_scale);
   sprite.setTextureRect(currentFrame);
   sprite.setOrigin(0.f, 0.f);
