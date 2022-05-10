@@ -1,41 +1,30 @@
 mkdir: cannot create directory ‘build’: File exists
--- The C compiler identification is GNU 11.2.1
--- The CXX compiler identification is GNU 11.2.1
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /usr/bin/cc - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /usr/bin/c++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found SFML 2.5.1 in /usr/local/lib/cmake/SFML
+-- libudev stable: 1
+-- Found UDev: /usr/lib64/libudev.so
+--    include: /usr/include
+CMake Warning (dev) at /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (VORBIS)
+  does not match the name of the calling package (Vorbis).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  SFML/SFML-2.5.1/cmake/Modules/FindVorbis.cmake:25 (find_package_handle_standard_args)
+  SFML/SFML-2.5.1/cmake/Macros.cmake:279 (find_package)
+  SFML/SFML-2.5.1/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/mr_Isachenko/projects/tp_project/temp/tp-project/build
-[  7%] Building CXX object CMakeFiles/proj.dir/src/character/view.cpp.o
-[ 15%] Building CXX object CMakeFiles/proj.dir/src/character/player.cpp.o
-[ 23%] Building CXX object CMakeFiles/proj.dir/src/main.cpp.o
-[ 30%] Building CXX object CMakeFiles/proj.dir/src/game.cpp.o
-/home/mr_Isachenko/projects/tp_project/temp/tp-project/src/game.cpp:50:11: warning: 'setColor' is deprecated [-Wdeprecated-declarations]
-  message.setColor(sf::Color::Red);
-          ^
-/usr/local/include/SFML/Graphics/Text.hpp:210:5: note: 'setColor' has been explicitly marked deprecated here
-    SFML_DEPRECATED void setColor(const Color& color);
-    ^
-/usr/local/include/SFML/Config.hpp:191:45: note: expanded from macro 'SFML_DEPRECATED'
-    #define SFML_DEPRECATED __attribute__ ((deprecated))
-                                            ^
-1 warning generated.
-[ 38%] Building CXX object CMakeFiles/proj.dir/src/character/model.cpp.o
-[ 46%] Building CXX object CMakeFiles/proj.dir/src/character/control.cpp.o
-[ 53%] Building CXX object CMakeFiles/proj.dir/src/convert_map_file_to_matrix.cpp.o
-[ 61%] Building CXX object CMakeFiles/proj.dir/src/tilemap.cpp.o
-[ 69%] Building CXX object CMakeFiles/proj.dir/src/default_map_settings.cpp.o
-[ 76%] Building CXX object CMakeFiles/proj.dir/src/default_tile_settings.cpp.o
-[ 84%] Building CXX object CMakeFiles/proj.dir/src/initialization_of_tiles.cpp.o
-[ 92%] Building CXX object CMakeFiles/proj.dir/src/tile.cpp.o
-[100%] Linking CXX executable ../bin/proj
-[100%] Built target proj
+Consolidate compiler generated dependencies of target sfml-system
+[ 14%] Built target sfml-system
+Consolidate compiler generated dependencies of target sfml-window
+[ 36%] Built target sfml-window
+Consolidate compiler generated dependencies of target sfml-graphics
+[ 63%] Built target sfml-graphics
+Consolidate compiler generated dependencies of target proj
+[ 73%] Built target proj
+Consolidate compiler generated dependencies of target sfml-network
+[ 82%] Built target sfml-network
+Consolidate compiler generated dependencies of target sfml-audio
+[100%] Built target sfml-audio

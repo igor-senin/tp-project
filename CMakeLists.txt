@@ -7,7 +7,8 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(SFML COMPONENTS graphics window system REQUIRED)
+add_subdirectory(SFML/SFML-2.5.1)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_COMPILER "clang++")
 
