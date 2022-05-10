@@ -2,16 +2,20 @@
 
 ### Как запустить проект на linux
 
-Установить библиотеку SFML и cmake:
-
-```bash
+0. Установить библиотеку SFML и cmake:
+```
 sudo apt-get install libsfml-dev
 sudo apt install cmake
 ```
-В папке tp-project:
+1. В папке tp-project:
+```
+   $ mkdir build
 
-```bash
-./run.sh   
+   $ cd build
+
+   $ cmake ..
+
+   $ make
 ```
 
 ## Используемые паттерны

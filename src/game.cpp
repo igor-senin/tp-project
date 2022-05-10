@@ -82,6 +82,18 @@ void Game::updatePlayer() {
   player->update();
 }
 
+void Game::updateCollision() {
+  // Collision bottom of screen
+  if (player->getPosition().y + player->getGlobalBounds().height
+      > window.getSize().y) {
+    player->landedY();
+    player->setPosition(
+        player->getPosition().x,
+        window.getSize().y - player->getGlobalBounds().height
+    );
+  }
+}
+
 void Game::render() {
   window.clear();
 
