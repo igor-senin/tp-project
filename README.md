@@ -1,14 +1,22 @@
 # TP Project
 
-### Как запустить проект на linux
+### Как запустить проект (проверено на Ubuntu, Gentoo и macOS)
 
-Установить библиотеку SFML и cmake:
+1. Установить cmake.
+
+* Linux:
 
 ```bash
-sudo apt-get install libsfml-dev
-sudo apt install cmake
+sudo apt install -y cmake
 ```
-В папке tp-project:
+
+* macOs:
+
+```shell
+brew install cmake
+```
+
+2. В папке tp-project:
 
 ```bash
 ./run.sh   
