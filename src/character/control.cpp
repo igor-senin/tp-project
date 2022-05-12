@@ -5,7 +5,7 @@ Control::Control(Model* ptr): model(ptr) {
 }
 
 void Control::updateMovement() {
-  bool keyHold = false; // TODO
+  bool keyHold = false;
   model->updatePreviousCondition();
 
   if (sf::Keyboard::isKeyPressed(sf::Keyboard::Key::A)) {
@@ -49,3 +49,4 @@ void Control::updateMovement() {
   }
 
 }
+

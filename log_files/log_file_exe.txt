@@ -1,0 +1,3 @@
+The requested video mode is not available, switching to a valid mode
+The requested video mode is not available, switching to a valid mode
+Open map file completed

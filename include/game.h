@@ -4,15 +4,21 @@
 #include <SFML/Graphics.hpp>
 
 #include "character/player.h"
+#include "tilemap.h"
 
 class Game {
  private:
   sf::RenderWindow window;
+  sf::RenderWindow start_window;
 
   Player* player;
 
+  TileMap* tilemap;
+
   void initPlayer();
   void initWindow();
+  void initStartWindow();
+  void initTilemap();
 
  public:
   Game();
@@ -20,8 +26,8 @@ class Game {
 
   // Functions
   void updateWindow();
+  void updateStartWindow();
   void updatePlayer();
-  void updateCollision();
   void update();
 
   void renderPlayer();
