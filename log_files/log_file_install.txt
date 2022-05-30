@@ -15,7 +15,7 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/mr_Isachenko/projects/tp_project/temp/tp-project/build
+-- Build files have been written to: /home/mr_Isachenko/projects/tp_project/n/tp-project/build
 Consolidate compiler generated dependencies of target sfml-system
 [ 14%] Built target sfml-system
 Consolidate compiler generated dependencies of target sfml-window

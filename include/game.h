@@ -28,6 +28,7 @@ class Game {
   void updateWindow();
   void updateStartWindow();
   void updatePlayer();
+  void updateCollision();
   void update();
 
   void renderPlayer();
